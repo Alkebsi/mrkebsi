@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+    <!--Head Tag-->
+    <head>
+        <!--Page Title-->
+        <title>Mohammed Alkebsi's Resume</title>
+        
+        <!--META Tages-->
+        <!--Site Description-->
+        <meta name="description" content="
+            Full-Stack websites developer, digital marketing
+            specialist, writer, CEO and Author at Envato Market.
+            Working with Hook Studio, Freelancer, UpWork and 
+            Envato.
+        " />
+        <!--Site Keywords-->
+        <meta name="keywords" content="
+        ***The Keywords***
+        "/>
+        <!--Site Settings--
+        <meta name="viewport" content="width=device-width, initial-scale=1" /-->
+        <meta name="theme-color" content="#040815"/>
+        
+        <!--LINK Tages-->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <link rel="stylesheet" href="assets/css/lib/aos.css"/>
+        <link rel="icon" href="assets/img/logo/logo-minimal-dark.svg" />
+        
+        <!--Additional Styling Specifications-->
+        <style>
+            .el-sp {
+                text-shadow: var(--blue-glitch-glow);
+            }
+            .el-sp:after {
+                content: none;
+            }
+            #mkebsi-name-subtitle {
+                text-shadow: var(--blue-glitch-glow);
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    
+    <!--Site/Content Body-->
+    <body onload="Start()">
+        <!--Calling the SVG Filters-->
+        <div id="svg-filters-signer"></div>
+        
+        <!--Loading Starts-->
+        <div id="loading">
+            <svg xmlns="http://www.w3.org/2000/svg" id="logo-con" width="500px" viewBox="0 0 70 70">
+                <g id="Layer_1" data-name="Layer 1" >
+                    <g transform="translate(18.2, 5)"><path class="cls-2" d="M22.59,19.08V29.3A11.77,20.77,0,0,1,10.81,30V30.3A11.78,20.78,0,0,1,22.59,29.08Z"/></g>
+                    <g transform="translate(-18.2, 5)"><path class="cls-2" d="M59.2,7.3V7.3A11.78,11.78,0,0,1,47.41,49.8V49.8A11.79,11.79,0,0,1,59.2,7.3Z"/></g>
+                    <path class="cls-2" d="M40.89,16.42v20.4a5.89,5.89,0,0,1-11.78,0V35.42a5.89,5.89,0,1,1,11.78,0Z"/>
+                </g>
+            </svg>
+            <p id="motivationals"></p>
+            <p id="quote-owner"></p>
+        </div>
+        <!--Loading Ends-->
+        
+        <!--Particles Manager-->
+        <div id="particles"></div>
+        
+        <!--Navigation System Stars-->
+        <nav id="nav-bar">
+            <!--Desktop View Nav. Bar. Starts-->
+            <div id="pc-nav" class="pc-element">
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/index.html';">Home</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/portfolio.html';">Portfolio</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/cv.html';">Resume</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/about.html';">About</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/articles.html';">Articles</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/contact.html';">Contact Me</button>
+                </div>
+            </div>
+            <!--Desktop View Nav. Bar. Ends-->
+            
+            <!--Mobile View Nav. Bar. Starts-->
+            <div id="mobile-nav" class="mobile-element">
+                <!-- Animated Dots Starts -->
+                <div id="dots-con" onmouseover="RP(1)" onmouseout="RP(0)">
+                    <div class="dots" id="dot1"></div>
+                    <div class="dots" id="dot2"></div>
+                    <div class="dots" id="dot3"></div>
+                </div>
+                <!--Animated Dots Ends-->
+                
+                <!--Right Panel Starts-->
+                <div id="rpanel" class="mobile-element" onmouseover="RP(1)" onmouseout="RP(0)">
+                    <div class="mb-nav-btn-cons" id="mnbc1">
+                        <button class="mb-nav-btns" onclick="window.location = '/index.html';">Home</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc2">
+                        <button class="mb-nav-btns" onclick="window.location = '/portfolio.html';">Portfolio</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc3">
+                        <button class="mb-nav-btns" onclick="window.location = '/cv.html';">Resume</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc4">
+                        <button class="mb-nav-btns" onclick="window.location = '/about.html';">About</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc5">
+                        <button class="mb-nav-btns" onclick="window.location = '/articles.html';">Articles</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc6">
+                        <button class="mb-nav-btns" onclick="window.location = '/contact.html';">Contact Me</button>
+                    </div>
+                </div>
+                <!--Right Panel Ends-->
+            </div>
+            <!--Mobile View Nav. Bar. Ends-->
+        </nav>
+        <!--Navigation System Ends-->
+        
+        <!--Main Content Starts-->
+        <main id="content">
+            
+            <!--Page Starter Starts-->
+            <div id="content-starter-con">
+                <div id="cv-cover" class="st-cover">
+                    <img src="assets/img/logo/logo-bordered-light.svg" id="hp-starter-logo"/>
+                    <h1 id="mkebsi-name" class="glitch-title">Mohammed Alkebsi - MKebsi</h1>
+                    <h2 id="mkebsi-name-subtitle" class="hover">A Professional Full-Stack Websites Developer & Digital Marketing Specialist</h2>
+                </div>
+                <div id="hp-s-bottom"></div>
+            </div>
+            <!--Page Starter Ends-->
+            
+            <!--Page Body Starts-->
+            <div id="cv-contact">
+                <h2 data-aos="fade-right">Contact Info</h2>
+                <p data-aos="fade-right">
+                    You can directly contact me at <a href="mailto:dev.mkebsi@gmail.com">
+                    dev.mkebsi@gmail.com</a>, or you can find another ways to reach me
+                    form <a href="/contact.html">the contact page.</a>
+                </p>
+            </div>
+            <br/>
+            <div id="cv-about">
+                <h2 data-aos="fade-up">About</h2>
+                <p data-aos="fade-up">
+                    I am working as a full stack websites developer and
+                    a digital marketer. I am also the co-founder of Hook
+                    and the current CEO. Expeditiousness was the main
+                    thing I thought of while working on any single thing.
+                    My goal is to burnish my skills with new opportunities 
+                    from companies worldwide, I also, 
+                    <a href="/about.html">Read more...</a>
+                </p>
+            </div>
+            <br/>
+            <div id="ed-skill-con" class="two-columns">
+                <div id="education">
+                    <h2 class="es-title" data-aos="fade-up">Education</h2>
+                    <br/>
+                    <p class="ed-center" data-aos="fade-right">Harvard University</p>
+                    <p class="ed-type" data-aos="fade-right">Diplomas of Education in Computer Science & Web Development</p>
+                    <p class="ed-period" data-aos="fade-right"><i>2022 - 2023</i></p>
+                    <div class="ed-dec" data-aos="fade-right">
+                        <ul>
+                            <li>
+                                Learn the philosophy of computing, and how programming 
+                                languages turn into zeros and ones.
+                            </li>
+                            <li>
+                                Learn C, Python, SQL, Comand-Line Arguments in the Linux
+                                operating system, Git and Github, Algorithmical Thinking
+                                and Coding Problem Solving & Debugging. 
+                            </li>
+                            <li>
+                                Still attending the classes and willing to complete them
+                                as soon as possible, but it may take up to a year.
+                            </li>
+                        </ul>
+                    </div>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">Google Digital Workshop & The Open University</p>
+                    <p class="ed-type"  data-aos="fade-right">Diploma of Education in Digital Marketing</p>
+                    <p class="ed-period"  data-aos="fade-right"><i>November 2021 - April 2022</i></p>
+                    <div class="ed-dec"  data-aos="fade-right">
+                        <ul>
+                            <li>
+                                Words can't describe how many things I have
+                                learned in this course. For about 5 months, everything 
+                                about digital marketing was covered from using Google
+                                Business to start until analyzing your international 
+                                clients using Google Analytics. Million other topic 
+                                was also implemented, but this is what words can
+                                say...
+                            </li>
+                        </ul>
+                    </div>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">Hasso Plattner Institute</p>
+                    <p class="ed-type"  data-aos="fade-right">Diplomas of Education in Programming & IT</p>
+                    <p class="ed-period"  data-aos="fade-right"><i>2022</i></p>
+                    <div class="ed-dec"  data-aos="fade-right">
+                        <ul>
+                            <li>
+                                Learn the different aspects of HTTP and URLs
+                            </li>
+                            <li>
+                                Understand XML and how will it help in developing 
+                                and building strong databases for Javascript or JSON.
+                            </li>
+                            <li>
+                                Refresh the technologies used in back-end and front-end
+                                web development and how will they be used in the future.
+                            </li>
+                            <li>
+                                Study the fields of simantic websites, data analyzing and
+                                some basics in Machine Learning 
+                            </li>
+                        </ul>
+                    </div>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">University of Helsinki</p>
+                    <p class="ed-type"  data-aos="fade-right">Diploma of Education in Artificial Intelligence (AI)</p>
+                    <p class="ed-period"  data-aos="fade-right"><i>February 5, 2022 - April 4, 2022</i></p>
+                    <div class="ed-dec" data-aos="fade-right">
+                        <ul>
+                            <li>
+                                Studying for more than 60 hours on how AI works,
+                                and why are people excited to implement the AI
+                                in their daily life.
+                            </li>
+                            <li>
+                                Understand the actual face of AI that it is all about
+                                solving problems and doing mathematical calculations 
+                                that seems hard for human.
+                            </li>
+                            <li>
+                                Learn the differences between the General AI,
+                                Narrow AI, Machine Learning, Deep Learning, 
+                                Problem Solving, ...etc.
+                            </li>
+                            <li>
+                                While having the course exercises, I faced many difficulties 
+                                near the end, but soon afterwards, I managed to open
+                                a way for myself and had the graduation ECTS credit.
+                            </li>
+                        </ul>
+                    </div>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">Aalto University</p>
+                    <p class="ed-type"  data-aos="fade-right">Diploma of Education in Entrepreneurship Studies</p>
+                    <p class="ed-period"  data-aos="fade-right"><i>February 2, 2022 - April 5, 2022</i></p>
+                    <div class="ed-dec"  data-aos="fade-right">
+                        <ul>
+                            <li>
+                                Understand the Start-ups deeply and learn
+                                about the companies, corporations, fself-employment.oundation, 
+                                organizations and self-employment.
+                            </li>
+                            <li>
+                                Get some significant training, for approximately 50+ hours, on
+                                the main reason on how a start-up would be able
+                                to transform into a big corporation and how great
+                                entrepreneurs made this before.
+                            </li>
+                            <li>
+                                Learn the key topics on why some start-ups succeed 
+                                and why others don't whether it's for money, idea, team,
+                                place or country.
+                            </li>
+                            <li>
+                                Spend more than 25 hours in course exercises and
+                                activities. 
+                            </li>
+                        </ul>
+                    </div>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">FreeCodeCamp.org</p>
+                    <p class="ed-type"  data-aos="fade-right">Diploma of Education in Web Design</p>
+                    <p class="ed-period"  data-aos="fade-right"><i>2019 - Present</i></p>
+                    <div class="ed-dec"  data-aos="fade-right">
+                        <ul>
+                            <li>
+                                Building five final projects for the certification and 
+                                collaborating with three different people as a project
+                                assistant.
+                            </li>
+                            <li>
+                                Spend more than 300 hours in coursework and
+                                about 900 hours of training in web design technologies. 
+                            </li>
+                        </ul>
+                    </div>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">SEMRush Academy</p>
+                    <p class="ed-type"  data-aos="fade-right">Diplomas of Education in Digital Marketing</p>
+                    <p class="ed-period"  data-aos="fade-right"><i>2019 - Present</i></p>
+                    <div class="ed-dec"  data-aos="fade-right">
+                        <ul>
+                            <li>
+                                Study the main aspects of Digital Marketing, and
+                                how to grow your business online with the main
+                                5Ss (Sell, Serve, Sizzle, Save and Speak).
+                            </li>
+                            <li>
+                                Understand many strategic frameworks
+                                like the SOSTAC&reg; and RACE.
+                            </li>
+                            <li>
+                                Learn why, how, where and to whom marketing should
+                                be prepared for like B2B, B2C, C2B, C2C, etc...
+                            </li>
+                            <li>
+                                Understand mainly how to use om of the most accurate 
+                                analyzing tool in the world, SEMRush, and how
+                                would I implement it's tools in PPC, SMM, SEO,
+                                Competitive Researching and Analyzing and 
+                                Keyword Researching. 
+                            </li>
+                        </ul>
+                    </div>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">W3Schools</p>
+                    <p class="ed-type"  data-aos="fade-right">Course in Full-Stack Web Development</p>
+                    <p class="ed-period"  data-aos="fade-right"><i>2017 - 2019</i></p>
+                    <div class="ed-dec"  data-aos="fade-right">
+                        <ul>
+                            <li>
+                                Studied with more than thirty student in Yemen
+                                and become the chosen leader in the first two days.
+                            </li>
+                            <li>
+                                Lead the "Advanced Energy" team to win the first place
+                                in the "Technology Entrepreneurs" festival in Sana'a
+                                with innovative ways of building and creating a new,
+                                Arabic based programming language.
+                            </li>
+                            <li>
+                                Building 10 final projects for the final graduation. This website,
+                                which you are viewing now, was the best one of them, but
+                                some additional (Pro) touches were added.
+                            </li>
+                            <li>
+                                Awarded a small, actually <b><i>not authenticated</i></b>, motivational
+                                certificate of completion in Full-Stack Website Development.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="t-skills">
+                    <h2 class="es-title" data-aos="fade-up">Technical Skills</h2>
+                    <br/>
+                    <div class="skills-ring" id="sring1" data-aos="fade-up"></div>
+                    <p class="skill" data-aos="fade-right" data-aos-offset="180">
+                        Front-End Web Design Technologies (<i>HTML, 
+                        CSS, JS, jQuary, Bootstrap, AJAX, AMP...etc</i>)
+                    </p>
+                    <br/>
+                    <div class="skills-ring" id="sring2" data-aos="fade-up"></div>
+                    <p class="skill" data-aos="fade-right" data-aos-offset="180">
+                        Back-End Web Development Technologies (<i>PHP, 
+                        SQL, Database Management, Orcale, Server Management, Apatche...etc</i>)
+                    </p>
+                    <br/>
+                    <div class="skills-ring" id="sring3" data-aos="fade-up"></div>
+                    <p class="skill" data-aos="fade-right" data-aos-offset="180">
+                        Computer Science (<i>C, Python, C++, C#...etc</i>)<br/><br/>
+                    </p>
+                    <br/>
+                    <div class="skills-ring" id="sring4" data-aos="fade-up"></div>
+                    <p class="skill" data-aos="fade-right" data-aos-offset="180">
+                        Digital Marketing (<i>SEO, SEM, SMM, Competitive Analysis,
+                        PPC, Google Analytics, Google Adwords, SEMRush Tools...etc</i>)
+                    </p>
+                    <br/>
+                    <div class="skills-ring" id="sring5" data-aos="fade-up"></div>
+                    <p class="skill" data-aos="fade-right" data-aos-offset="180">
+                        Microsoft Office Suit & Adobe Main Apps (<i>Word, 
+                        Excel, Access, PowerPoint, Photoshop, Illustrator...etc</i>)
+                    </p>
+                </div>
+                <div id="s-skills">
+                    <h2 class="es-title" data-aos="fade-up">Soft Skills</h2>
+                    <span  data-aos="zoom-in-right">Entrepreneur Thinking</span>
+                    <span  data-aos="zoom-in-right">Management Skills</span>
+                    <span  data-aos="zoom-in-right">Critical Thinking</span>
+                    <span  data-aos="zoom-in-right">Accountability</span>
+                    <span  data-aos="zoom-in-right">Strong Communication Skills</span>
+                    <span  data-aos="zoom-in-right">Leadership</span>
+                    <span  data-aos="zoom-in-right">Accuracy</span>
+                    <span  data-aos="zoom-in-right">Perseverance</span>
+                    <span  data-aos="zoom-in-right">Expeditiousness</span>
+                    <span  data-aos="zoom-in-right">Creative Thinking</span>
+                    <span  data-aos="zoom-in-right">Initiation</span>
+                    <span  data-aos="zoom-in-right">Self-Discipline</span>
+                </div>
+                <div id="awards">
+                    <h2 class="es-title" data-aos="fade-up">Awards & Certifications</h2>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">Google & The Open University - Fundamentals of Digital Marketing</p>
+                    <a href="assets/Google & Open University - FDM Certification.pdf" class="ed-type"  data-aos="fade-right">Authenticated</a>
+                    <p class="ed-period"  data-aos="fade-right"><i>Issued in April 11, 2022</i></p>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">SEMRush Academy - Nine Digital Marketing & Analyzing Certifications</p>
+                    <a href="https://static.semrush.com/academy-prod/certificate/11084604/d5E4a6IjZu5bHep.png" target="_blank" class="ed-type"  data-aos="fade-right">Semrush SEO Toolkit</a>
+                    <a href="https://static.semrush.com/academy-prod/certificate/11084604/vloj3jdgD4fjtRf.png" target="_blank" class="ed-type"  data-aos="fade-right">SEO Fundamentals</a>
+                    <a href="https://static.semrush.com/academy-prod/certificate/11084604/CtU7pIwVaHMsP5F.png" target="_blank" class="ed-type"  data-aos="fade-right">Technical SEO</a>
+                    <a href="https://static.semrush.com/academy-prod/certificate/11084604/VHHNpfQxOlXlnEI.png" target="_blank" class="ed-type"  data-aos="fade-right">Content Marketing Fundamentals</a>
+                    <a href="https://static.semrush.com/academy-prod/certificate/11084604/VMvWAY52lEknode.png" target="_blank" class="ed-type"  data-aos="fade-right">PPC Fundamentals</a>
+                    <a href="https://static.semrush.com/academy-prod/certificate/11084604/NfRnR4ywovVRiuK.png" target="_blank" class="ed-type"  data-aos="fade-right">SMM Fundamentals</a>
+                    <a href="https://static.semrush.com/academy-prod/certificate/11084604/Gya6i2EmrPanjgx.png" target="_blank" class="ed-type"  data-aos="fade-right">Role of Content</a>
+                    <a href="https://static.semrush.com/academy-prod/certificate/11084604/qg2ZFkJtnF0CGNA.png" target="_blank" class="ed-type"  data-aos="fade-right">Competitive Analysis & Keyword Research</a>
+                    <a href="https://static.semrush.com/academy-prod/certificate/11084604/eOKvoMM5mCqIHiI.png" target="_blank" class="ed-type"  data-aos="fade-right">Advanced Competitive Research</a>
+                    <p class="ed-period"  data-aos="fade-right"><i>Issued from March 31, 2022 - April 7, 2022</i></p>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">Aalto University - Starting Up (Entrepreneurship Studies)</p>
+                    <a href="https://courses.reaktor.education/certificate/en/startingup/1f520954-639f-40a5-81eb-530e50ddc367" target="_blank" class="ed-type"  data-aos="fade-right">Authenticated</a>
+                    <p class="ed-period"  data-aos="fade-right"><i>Issued in April 5, 2022</i></p>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">University of Helsinki - Elements of AI (Artificial Intelligence)</p>
+                    <a href="https://certificates.mooc.fi/validate/zxinqbjzu1l" target="_blank" class="ed-type"  data-aos="fade-right">Authenticated</a>
+                    <p class="ed-period"  data-aos="fade-right"><i>Issued in April 4, 2022</i></p>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">HackerRank - CSS Skills</p>
+                    <a href="https://www.hackerrank.com/certificates/8751e0ad722c" target="_blank" class="ed-type"  data-aos="fade-right">Authenticated</a>
+                    <p class="ed-period"  data-aos="fade-right"><i>Issued in April 2, 2022</i></p>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">FreeCodeCamp.org - Responsive Web Design</p>
+                    <a href="https://www.freecodecamp.org/certification/mkebsi/responsive-web-design" target="_blank" class="ed-type"  data-aos="fade-right">Authenticated</a>
+                    <p class="ed-period"  data-aos="fade-right"><i>Issued in January 18, 2022</i></p>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">Template Monster Certifications Center - HTML & CSS</p>
+                    <a href="https://certification.templatemonster.com/certificates/050f6331ca04fb4ddcf2609d47738ef1/" target="_blank" class="ed-type"  data-aos="fade-right">Authenticated</a>
+                    <p class="ed-period"  data-aos="fade-right"><i>Issued in January 10, 2022</i></p>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">Hasso Plattner Institute - Confirmation of Participations</p>
+                    <a href="assets/Web Technologies - Open HPI.pdf" class="ed-type"  data-aos="fade-right">Website Technologies</a>
+                    <a href="assets/Information Service Engineering - Open HPI.pdf" class="ed-type"  data-aos="fade-right">Information Service Engineering</a>
+                    <p class="ed-period"  data-aos="fade-right"><i>Issued in January 2, 2022</i></p>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">W3Schools - Full-Stack Web Development</p>
+                    <a href="assets/W3Schools Certification.pdf" class="ed-type"  data-aos="fade-right">Not Authenticated</a>
+                    <p class="ed-period"  data-aos="fade-right"><i>Issued in November 17, 2019</i></p>
+                </div>
+                <div id="publications">
+                    <h2 class="es-title" data-aos="fade-up">Publications</h2>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">Which Is Better: UI/UX Designing, Programming or Copywriting?</p>
+                    <a href="https://discover.hubpages.com/technology/Which-Is-Better-UIUX-Designing-Programming-or-Copywriting" class="ed-type"  data-aos="fade-right">Hubpages.com</a>
+                    <p class="ed-period"  data-aos="fade-right"><i>Published in January 1, 2022</i></p>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">Is a Website Important for Your Company? </p>
+                    <a href="https://discover.hubpages.com/technology/Is-a-Website-Important-for-Your-Company" class="ed-type"  data-aos="fade-right">Hubpages.com</a>
+                    <p class="ed-period"  data-aos="fade-right"><i>Published in November 17, 2021</i></p>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">The Next Generation of Websites Development</p>
+                    <a href="https://discover.hubpages.com/technology/The-Next-Generation-of-Websites-Development" class="ed-type"  data-aos="fade-right">Hubpages.com</a>
+                    <p class="ed-period"  data-aos="fade-right"><i>Published in December 9, 2021</i></p>
+                    <br/>
+                    <p class="ed-center"  data-aos="fade-right">Web Development Technologies</p>
+                    <a href="https://discover.hubpages.com/technology/Website-Development-Technologies" class="ed-type"  data-aos="fade-right">Hubpages.com</a>
+                    <p class="ed-period"  data-aos="fade-right"><i>Published in December 9, 2021</i></p> 
+                </div>
+            </div>
+            <p id="decision-quote" class="quote" data-aos="fade-up" style="text-shadow: var(--red-glitch-glow);">
+                Life is trying things to see if they work!
+            <p>
+            <!--Social Media Links and Contact Information-->
+            <div id="social-contacts">
+                <h2 data-aos="fade-right" onclick="window.location = '/contact.html';">Reach me at...</h2>
+                <br/>
+                <a href="https://angel.co/u/mohammed-alkebsi" target="_blank" data-aos="fade"><svg xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" class="cv-icon" viewBox="0 0 48 48"><g>
+                    <path d="M7.15293,34.07059c0-3.83453,1.62895-5.85893,4.8-6.72941c-0.50196-1.2549-0.75294-2.18039-0.75294-2.77647
+                        c0-2.20661,2.78837-4.94118,4.89412-4.94118c0.53333,0,1.16079,0.14118,1.88235,0.42353
+                        c-1.50588-4.29804-2.58823-7.56078-3.24706-9.78823c-0.86017-2.90307-2.01157-6.67816,0-8.94118
+                        C15.51372,0.43922,16.5647,0,17.88235,0c2.25882,0,4.97255,4.62745,8.14118,13.88235l0.8,2.30588
+                        c1.20033-3.00082,4.88375-15.29412,9.0353-15.29412c1.2549,0,2.24314,0.42353,2.96471,1.27059
+                        c2.02848,2.28204,0.83306,5.66133,0,8.61176c-0.65882,2.2902-1.69412,5.42745-3.10588,9.41177
+                        c1.78823,0.43921,3.07451,1.28627,3.85883,2.54118c0.84706,1.34902,1.27059,3.43529,1.27059,6.25882
+                        c0,5.58432-1.66275,10.14902-4.98824,13.69412C32.47058,46.22745,28.17254,48,22.9647,48
+                        c-6.43162,0-12.0802-3.77773-14.58823-8.89412C7.56078,37.41177,7.15293,35.73333,7.15293,34.07059z M10.21176,33.83529
+                        c0,1.96574,1.31226,4.33846,2.49412,5.92941c2.76824,3.57846,6.38809,5.12941,10.63529,5.12941
+                        c4.04706,0,7.45098-1.52157,10.21177-4.56471c2.72941-3.01176,4.09412-6.82353,4.09412-11.43529
+                        c0-1.57722-0.00425-3.93641-1.17647-4.94118c-0.84706-0.72157-2.5098-1.34902-4.98824-1.88235
+                        c-2.47843-0.56471-5.11372-0.84706-7.90588-0.84706c-1.07907,0-1.64706,0.16292-1.64706,1.22353
+                        c0,1.28627,0.72157,2.19608,2.16471,2.72941c1.56863,0.65882,4.15686,0.98824,7.76471,0.98824h1.31765
+                        c0.73756,0,1.39246,0.3853,1.6,1.97647c-1.3528,1.3528-3.58117,1.53439-5.08235,2.68235
+                        c-1.2549,0.9098-2.25882,1.99216-3.01176,3.24706c-0.72157,1.22353-1.08235,2.38432-1.08235,3.48235
+                        c0,0.65882,0.15686,1.45882,0.47059,2.4c0.3451,1.03529,0.51761,1.7098,0.51761,2.02353
+                        c-0.00828,0.29124-0.09408,0.49412-0.44696,0.6353c-1.4588,0.32941-2.12555-0.38432-2.753-1.57647
+                        c-0.53333-1.00392-0.83137-2.2902-0.89412-3.85882c-0.18997,0.06332-0.87779,0.04706-1.08235,0.04706
+                        c0.03137,0.15686,0.04706,0.3451,0.04706,0.5647c0,0.94118-0.36078,1.74118-1.08235,2.4
+                        c-0.72157,0.65882-1.56863,0.98824-2.54118,0.98824c-1.47451,0-2.96471-0.70588-4.47059-2.11765
+                        c-1.50588-1.44314-2.25882-2.8549-2.25882-4.23529c0-0.81907,0.35039-1.24451,0.89412-1.78823
+                        c0.78431,0.97255,1.31765,1.64706,1.6,2.02353c1.31765,1.85098,2.5098,2.77647,3.57647,2.77647
+                        c0.59893,0,1.08235-0.44372,1.08235-0.75294c0-0.25098-0.18824-0.70588-0.56471-1.3647
+                        c-0.55047-1.03213-2.72209-3.91092-3.85882-4.84706c-0.47059-0.43921-0.81569-0.65882-1.03529-0.65882
+                        C11.74108,30.21177,10.21176,31.57092,10.21176,33.83529z M14.44705,24.84706c0,0.40784,0.25098,1.11373,0.75294,2.11765
+                        c0.92526,1.78443,3.10059,4.66358,4.75294,6.11765c0.75294,0.62745,1.31765,0.94118,1.69412,0.94118
+                        c0.48287,0,0.98824-0.57428,0.98824-1.08235c0-0.37647-0.28235-1.28627-0.84706-2.72941c-0.77729-1.88772-2.43055-5.34281-4-6.63529
+                        c-0.50196-0.47059-0.98824-0.70588-1.45882-0.70588C15.65802,22.87059,14.44705,24.10072,14.44705,24.84706z M16.5647,4.51765
+                        c0,1.06667,0.37647,2.7451,1.12941,5.03529c0.6902,2.22745,1.72549,5.20784,3.10588,8.94118
+                        c0.71058-0.42635,2.43125-0.2239,3.34118-0.14118l-3.24706-9.41177C20.01568,6.43137,19.32548,4.8,18.82352,4.04706
+                        c-0.40784-0.65882-0.81569-0.98824-1.22353-0.98824C16.91751,3.05882,16.5647,3.82956,16.5647,4.51765z M24.37646,28.51765
+                        c0.28235,0.72157,0.58039,1.50588,0.89412,2.35294c0.62745-0.72157,1.2549-1.31765,1.88235-1.78823
+                        C26.1957,28.8909,25.42523,28.86724,24.37646,28.51765z M29.31764,18.91765l3.15294,0.56471
+                        c1.41177-3.8902,2.49412-7.01176,3.24706-9.36471c0.43381-1.40555,1.69067-4.60948,0.84706-5.69412
+                        c-0.28518-0.49905-1.16394-0.64828-2.16471,0.94118c-0.59608,0.9098-1.27059,2.49412-2.02353,4.75294L29.31764,18.91765z"/>
+                </g></svg></a>
+                <a href="https://www.linkedin.com/in/mkebsi" target="_blank" data-aos="fade"><svg xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="cv-icon" viewBox="0 0 48 48"><g>
+                    <path d="M46,0H2C0.9,0,0,0.9,0,2v44c0,1.1,0.9,2,2,2h44c1.1,0,2-0.9,2-2V2C48,0.9,47.1,0,46,0z M14.2,40.9H7.1V18
+                        h7.1V40.9z M10.7,14.9c-2.3,0-4.1-1.8-4.1-4.1c0-2.3,1.8-4.1,4.1-4.1c2.3,0,4.1,1.8,4.1,4.1C14.8,13,13,14.9,10.7,14.9z M40.9,40.9
+                        h-7.1V29.8c0-2.7,0-6.1-3.7-6.1c-3.7,0-4.3,2.9-4.3,5.9v11.3h-7.1V18h6.8v3.1h0.1c0.9-1.8,3.3-3.7,6.7-3.7c7.2,0,8.5,4.7,8.5,10.9
+                        V40.9z"/>
+                </g></svg></a>
+                <a href="https://www.facebook.com/profile.php?id=100077633622517" target="_blank" data-aos="fade"><svg xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="cv-icon" viewBox="0 0 48 48"><g>
+                    <path d="M46,0H2C0.89543,0,0,0.89543,0,2v44c0,1.10457,0.89543,2,2,2h23.63829V29.4119h-6.25529v-7.24417h6.25529
+                        v-5.34235c0-6.19977,3.78661-9.57566,9.31723-9.57566c2.64922,0,4.92609,0.19724,5.58963,0.2854v6.47912l-3.83577,0.00174
+                        c-3.00786,0-3.59026,1.42929-3.59026,3.52668v4.62507h7.17347l-0.93401,7.24417h-6.23946V48H46c1.10457,0,2-0.89543,2-2V2
+                        C48,0.89543,47.10457,0,46,0z"/>
+                </g></svg></a>
+                <a href="https://instagram.com/mkebsi" target="_blank" data-aos="fade"><svg xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" class="cv-icon" viewBox="0 0 48 48"><g>
+                    <path d="M42.3,0H5.7C2.6,0,0,2.5,0,5.7v36.6C0,45.5,2.6,48,5.7,48h36.6c3.2,0,5.7-2.5,5.7-5.7V5.7
+                        C48,2.5,45.4,0,42.3,0z M36,6h4c1.1,0,2,0.9,2,2v4c0,1.1-0.9,2-2,2h-4c-1.1,0-2-0.9-2-2V8C34,6.9,34.9,6,36,6z M24.1,14.8
+                        c5.1,0,9.2,4.1,9.2,9.2c0,5.1-4.1,9.2-9.2,9.2c-5.1,0-9.2-4.1-9.2-9.2C14.8,19,19,14.8,24.1,14.8z M40,42H8c-1.1,0-2-0.9-2-2V20h4
+                        c-0.6,2.2-0.7,4.8-0.2,7.2c1.2,5.6,5.7,10,11.3,11.1c9.3,1.8,17.5-5.3,17.5-14.3c0-1.3-0.3-2.8-0.7-4.1h4v20C42,41.1,41.1,42,40,42z"/>
+                </g></svg></a>
+                <a href="https://twitter.com/mrkebsi" target="_blank" data-aos="fade"><svg xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" class="cv-icon" viewBox="0 0 48 48"><g>
+                    <path d="M48,9.1c-1.8,0.8-3.7,1.3-5.7,1.6c2-1.2,3.6-3.1,4.3-5.4c-1.9,1.1-4,1.9-6.3,2.4c-1.8-1.9-4.4-3.1-7.2-3.1
+                        c-5.4,0-9.8,4.4-9.8,9.8c0,0.8,0.1,1.5,0.3,2.2C15.5,16.2,8.2,12.3,3.3,6.3C2.5,7.8,2,9.4,2,11.2c0,3.4,1.7,6.4,4.4,8.2
+                        c-1.6-0.1-3.1-0.5-4.5-1.2c0,0,0,0.1,0,0.1c0,4.8,3.4,8.8,7.9,9.7c-0.8,0.2-1.7,0.3-2.6,0.3c-0.6,0-1.3-0.1-1.9-0.2
+                        c1.3,3.9,4.9,6.8,9.2,6.8c-3.4,2.6-7.6,4.2-12.2,4.2c-0.8,0-1.6,0-2.3-0.1c4.4,2.8,9.5,4.4,15.1,4.4c18.1,0,28-15,28-28
+                        c0-0.4,0-0.9,0-1.3C45,12.8,46.7,11.1,48,9.1z"/>
+                </g></svg></a>
+                <a href="https://themeforest.com/user/MKebsi" target="_blank" data-aos="fade"><svg xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="cv-icon" viewBox="0 0 48 48"><g>
+                    <path d="M38.9,0.3c2.2,1.1,11.1,19.9,3.5,36.4C36.3,49.8,21,49.8,13.2,45.2c-6.6-4-16.7-16.5-5.5-31.8
+                        c0.5-0.6,1.6-0.5,1.4,1.2c-0.2,1.2-1.8,10.2,1.3,14.1c1.4,1.9,1.7,0.6,1.7,0.6s-0.2-13,9.8-22.9C28.3,0.4,37.1-0.6,38.9,0.3z"/>
+                </g></svg></a>
+                <a href="https://dribbble.com/MKebsi" target="_blank" data-aos="fade"><svg xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="cv-icon" viewBox="0 0 48 48"><g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24,48C10.8,48,0,37.2,0,24S10.8,0,24,0s24,10.8,24,24
+                        S37.2,48,24,48z M44.2,27.3c-0.7-0.2-6.3-1.9-12.8-0.9c2.7,7.4,3.8,13.4,4,14.6C40.1,37.9,43.3,33,44.2,27.3z M32,42.9
+                        c-0.3-1.8-1.5-8.1-4.4-15.5c0,0-0.1,0-0.1,0c-11.6,4-15.7,12-16.1,12.8c3.5,2.7,7.8,4.3,12.6,4.3C26.8,44.5,29.5,44,32,42.9z
+                         M8.8,37.7c0.5-0.8,6.1-10.1,16.7-13.5c0.3-0.1,0.5-0.2,0.8-0.2c-0.5-1.2-1.1-2.3-1.7-3.5c-10.2,3.1-20.2,2.9-21.1,2.9
+                        c0,0.2,0,0.4,0,0.6C3.5,29.3,5.5,34.1,8.8,37.7z M3.9,19.8c0.9,0,9.4,0,19-2.5c-3.4-6-7.1-11.1-7.6-11.9C9.5,8.2,5.3,13.5,3.9,19.8z
+                         M19.2,4.1c0.6,0.8,4.3,5.8,7.6,12c7.3-2.7,10.4-6.9,10.7-7.4C34,5.5,29.2,3.5,24,3.5C22.3,3.5,20.7,3.7,19.2,4.1z M39.9,11.1
+                        c-0.4,0.6-3.9,5-11.4,8.1c0.5,1,0.9,2,1.4,3c0.2,0.4,0.3,0.7,0.4,1.1c6.8-0.9,13.6,0.5,14.3,0.7C44.5,19,42.7,14.6,39.9,11.1z"/>
+                </g></svg></a>
+                <a href="https://pinterest.com/MKebsi" target="_blank" data-aos="fade"><svg xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="cv-icon" viewBox="0 0 48 48"><g>
+                    <path d="M24,0C10.7,0,0,10.7,0,24c0,10.2,6.3,18.9,15.3,22.3c-0.2-1.9-0.4-4.8,0.1-6.9c0.4-1.9,2.8-11.9,2.8-11.9
+                        s-0.7-1.4-0.7-3.6c0-3.3,1.9-5.8,4.3-5.8c2,0,3,1.5,3,3.4c0,2.1-1.3,5.1-2,8c-0.6,2.4,1.2,4.3,3.6,4.3c4.3,0,7.5-4.5,7.5-11
+                        c0-5.7-4.1-9.8-10-9.8c-6.8,0-10.8,5.1-10.8,10.4c0,2.1,0.8,4.3,1.8,5.5c0.2,0.2,0.2,0.4,0.2,0.7c-0.2,0.8-0.6,2.4-0.7,2.7
+                        c-0.1,0.4-0.3,0.5-0.8,0.3c-3-1.4-4.9-5.8-4.9-9.3c0-7.6,5.5-14.5,15.9-14.5c8.3,0,14.8,5.9,14.8,13.9c0,8.3-5.2,14.9-12.5,14.9
+                        c-2.4,0-4.7-1.3-5.5-2.8c0,0-1.2,4.6-1.5,5.7c-0.5,2.1-2,4.7-3,6.3c2.2,0.7,4.6,1.1,7.1,1.1c13.3,0,24-10.7,24-24
+                        C48,10.7,37.3,0,24,0z"/>
+                </g></svg></a>
+                <a href="https://github.com/MrKebsi" target="_blank" data-aos="fade"><svg xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="cv-icon" viewBox="0 0 48 48"><g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24,0.6c-13.3,0-24,10.7-24,24c0,10.6,6.9,19.6,16.4,22.8
+                        c1.2,0.2,1.6-0.5,1.6-1.2c0-0.6,0-2.1,0-4.1c-6.7,1.5-8.1-3.2-8.1-3.2c-1.1-2.8-2.7-3.5-2.7-3.5c-2.2-1.5,0.2-1.5,0.2-1.5
+                        c2.4,0.2,3.7,2.5,3.7,2.5c2.1,3.7,5.6,2.6,7,2c0.2-1.6,0.8-2.6,1.5-3.2c-5.3-0.6-10.9-2.7-10.9-11.9c0-2.6,0.9-4.8,2.5-6.4
+                        c-0.2-0.6-1.1-3,0.2-6.4c0,0,2-0.6,6.6,2.5c1.9-0.5,4-0.8,6-0.8c2,0,4.1,0.3,6,0.8c4.6-3.1,6.6-2.5,6.6-2.5c1.3,3.3,0.5,5.7,0.2,6.4
+                        c1.5,1.7,2.5,3.8,2.5,6.4c0,9.2-5.6,11.2-11,11.8c0.9,0.7,1.6,2.2,1.6,4.4c0,3.2,0,5.8,0,6.6c0,0.6,0.4,1.4,1.7,1.2
+                        C41.1,44.2,48,35.2,48,24.6C48,11.3,37.3,0.6,24,0.6z"/>
+                </g></svg></a>
+                <a href="https://codepen.io/MKebsi" target="_blank" data-aos="fade"><svg xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="cv-icon" viewBox="0 0 48 48"><g>
+                    <path d="M48,16.4C48,16.4,48,16.4,48,16.4c0-0.1,0-0.2-0.1-0.3c0,0,0-0.1,0-0.1c0-0.1,0-0.1-0.1-0.2c0,0,0-0.1,0-0.1
+                        c0,0,0-0.1-0.1-0.1c0,0,0-0.1-0.1-0.1c0,0-0.1-0.1-0.1-0.1c0,0,0-0.1-0.1-0.1c0,0-0.1-0.1-0.1-0.1c0,0-0.1-0.1-0.1-0.1
+                        c0,0-0.1-0.1-0.1-0.1c0,0-0.1,0-0.1-0.1c0,0,0,0,0,0L25.1,0.3c-0.7-0.5-1.6-0.5-2.3,0L0.9,15c0,0,0,0,0,0c0,0-0.1,0-0.1,0.1
+                        c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.1,0.1c0,0,0,0.1-0.1,0.1c0,0-0.1,0.1-0.1,0.1c0,0,0,0.1-0.1,0.1
+                        c0,0,0,0.1-0.1,0.1c0,0,0,0.1,0,0.1c0,0,0,0.1-0.1,0.2c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0,0.3v14.6
+                        c0,0.1,0,0.2,0,0.3c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0.1,0.2c0,0,0,0.1,0,0.1c0,0,0,0.1,0.1,0.1
+                        c0,0,0,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0,0,0,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1
+                        c0,0,0.1,0,0.1,0.1c0,0,0,0,0,0l21.9,14.6c0.3,0.2,0.7,0.3,1.1,0.3c0.4,0,0.8-0.1,1.1-0.3L47.1,33c0,0,0,0,0,0c0,0,0.1,0,0.1-0.1
+                        c0,0,0.1-0.1,0.1-0.1c0,0,0.1-0.1,0.1-0.1c0,0,0.1-0.1,0.1-0.1c0,0,0-0.1,0.1-0.1c0,0,0.1-0.1,0.1-0.1c0,0,0-0.1,0.1-0.1
+                        c0,0,0-0.1,0.1-0.1c0,0,0-0.1,0-0.1c0-0.1,0-0.1,0.1-0.2c0,0,0-0.1,0-0.1c0-0.1,0-0.1,0-0.2c0,0,0-0.1,0-0.1c0-0.1,0-0.2,0-0.3V16.7
+                        C48,16.6,48,16.5,48,16.4z M26.1,5.9l16.2,10.8L35,21.5l-8.9-6V5.9z M21.9,5.9v9.6l-8.9,6l-7.2-4.8L21.9,5.9z M4.1,20.5L9.3,24
+                        l-5.2,3.5V20.5z M21.9,42.1L5.8,31.3l7.2-4.8l8.9,6V42.1z M24,28.9L16.7,24l7.3-4.9l7.3,4.9L24,28.9z M26.1,42.1v-9.6l8.9-6l7.2,4.8
+                        L26.1,42.1z M43.9,27.5L38.7,24l5.2-3.5V27.5z"/>
+                </g></svg></a>
+            </div>
+            <!--Page Body Ends-->
+            
+        </main>
+        <!--Main Content Ends-->
+        
+        <!--Calling Footer-->
+        <img src="assets/img/footer-transition.png" id="footer-transition"/>
+        <iframe id="footer" src="footer.html"></iframe>
+        
+        <!--Javascript Libraries & Files-->
+        <script src="assets/js/lib/aos.js"></script>
+        <script src="assets/js/lib/gauge.js"></script>
+        <script src="assets/js/lib/anime.min.js"></script>
+        <script src="assets/js/lib/particles.js"></script>
+        <script src="assets/js/lib/typed.min.js"></script>
+        <script src="assets/js/lib/glitch.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!--Special JS-->
+        <script>
+            //Setting the skills rings
+            let sRing1 = Gauge(document.getElementById("sring1"),{
+                max: 100, 
+                dialStartAngle: -90, 
+                dialEndAngle: -90.001,
+                showValue: false,
+                value: 90
+            });
+            let sRing2 = Gauge(document.getElementById("sring2"),{
+                max: 100, 
+                dialStartAngle: -90, 
+                dialEndAngle: -90.001,
+                showValue: false,
+                value: 70
+            });    
+            let sRing3 = Gauge(document.getElementById("sring3"),{
+                max: 100, 
+                dialStartAngle: -90, 
+                dialEndAngle: -90.001,
+                showValue: false,
+                value: 84
+            });
+            let sRing4 = Gauge(document.getElementById("sring4"),{
+                max: 100, 
+                dialStartAngle: -90, 
+                dialEndAngle: -90.001,
+                showValue: false,
+                value: 64
+            });
+            let sRing5 = Gauge(document.getElementById("sring5"),{
+                max: 100, 
+                dialStartAngle: -90, 
+                dialEndAngle: -90.001,
+                showValue: false,
+                value: 80
+            });
+        </script>
+    </body>
+</html>
