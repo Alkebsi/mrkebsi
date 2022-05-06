@@ -28,5 +28,5 @@ Also I want, even not forced, to mention some great resources I used. They were 
 - **Images:** All images were downloaded from [Unspalsh](https://unsplash.com). The drownings or the infographics were a template from [Envato GraphicRiver](https://graphicriver.net)
 - **JS Libraries:** I used many of them mentioned inside [Assets > js > libs > License > *](somelink)
 -  **Special Thanks:** I want to give a special thank to the guys at codepen.io all, and a thank from my hurt to [Blaz Kemperle](https://codepen.io/blazicke), [Smashing Magazine](https://codepen.io/smashingmag) and [Dirk Weber](https://codepen.io/DirkWeber) since their pens really helped me. Thanks guys...
-<br><br>
+
 ![](https://github.com/MrKebsi/MrKebsi.github.io/blob/main/cover2.jpg) 
