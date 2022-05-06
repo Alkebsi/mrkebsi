@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <!--Head Tag-->
+    <head>
+        <!--Page Title-->
+        <title>MKebsi</title>
+        
+        <!--META Tages-->
+        <!--Site Description-->
+        <meta name="description" content="
+        M.Kebsi - Mohammed Alkebsi's personal website.
+        Where the professionalism takes another step. MKebsi
+        is a pro websites developer and designer. Also a digital 
+        marketing specialist. Find out more...
+        " />
+        <!--Site Keywords-->
+        <meta name="keywords" content="
+        ***The Keywords***
+        "/>
+        <!--Site Settings-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#040815"/>
+        
+        <!--LINK Tages-->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <link rel="stylesheet" href="assets/css/lib/aos.css"/>
+        <link rel="icon" href="assets/img/logo/logo-minimal-dark.svg" />
+    </head>
+    
+    <!--Site/Content Body-->
+    <body onload="Start()">
+        <!--Calling the SVG Filters-->
+        <div id="svg-filters-signer"></div>
+        
+        <!--Loading Starts-->
+        <div id="loading">
+            <svg xmlns="http://www.w3.org/2000/svg" id="logo-con" width="500px" viewBox="0 0 70 70">
+                <g id="Layer_1" data-name="Layer 1" >
+                    <g transform="translate(18.2, 5)"><path class="cls-2" d="M22.59,19.08V29.3A11.77,20.77,0,0,1,10.81,30V30.3A11.78,20.78,0,0,1,22.59,29.08Z"/></g>
+                    <g transform="translate(-18.2, 5)"><path class="cls-2" d="M59.2,7.3V7.3A11.78,11.78,0,0,1,47.41,49.8V49.8A11.79,11.79,0,0,1,59.2,7.3Z"/></g>
+                    <path class="cls-2" d="M40.89,16.42v20.4a5.89,5.89,0,0,1-11.78,0V35.42a5.89,5.89,0,1,1,11.78,0Z"/>
+                </g>
+            </svg>
+            <p id="motivationals"></p>
+            <p id="quote-owner"></p>
+        </div>
+        <!--Loading Ends-->
+        
+        <!--Particles Manager-->
+        <div id="particles"></div>
+        
+        <!--Navigation System Stars-->
+        <nav id="nav-bar">
+            <!--Desktop View Nav. Bar. Starts-->
+            <div id="pc-nav" class="pc-element">
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/index.html';">Home</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/portfolio.html';">Portfolio</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/cv.html';">Resume</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/about.html';">About</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/articles.html';">Articles</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/contact.html';">Contact Me</button>
+                </div>
+            </div>
+            <!--Desktop View Nav. Bar. Ends-->
+            
+            <!--Mobile View Nav. Bar. Starts-->
+            <div id="mobile-nav" class="mobile-element">
+                <!-- Animated Dots Starts -->
+                <div id="dots-con" onmouseover="RP(1)" onmouseout="RP(0)">
+                    <div class="dots" id="dot1"></div>
+                    <div class="dots" id="dot2"></div>
+                    <div class="dots" id="dot3"></div>
+                </div>
+                <!--Animated Dots Ends-->
+                
+                <!--Right Panel Starts-->
+                <div id="rpanel" class="mobile-element" onmouseover="RP(1)" onmouseout="RP(0)">
+                    <div class="mb-nav-btn-cons" id="mnbc1">
+                        <button class="mb-nav-btns" onclick="window.location = '/index.html';">Home</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc2">
+                        <button class="mb-nav-btns" onclick="window.location = '/portfolio.html';">Portfolio</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc3">
+                        <button class="mb-nav-btns" onclick="window.location = '/cv.html';">Resume</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc4">
+                        <button class="mb-nav-btns" onclick="window.location = '/about.html';">About</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc5">
+                        <button class="mb-nav-btns" onclick="window.location = '/articles.html';">Articles</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc6">
+                        <button class="mb-nav-btns" onclick="window.location = '/contact.html';">Contact Me</button>
+                    </div>
+                </div>
+                <!--Right Panel Ends-->
+            </div>
+            <!--Mobile View Nav. Bar. Ends-->
+        </nav>
+        <!--Navigation System Ends-->
+        
+        <!--Main Content Starts-->
+        <main id="content">
+            
+            <!--Page Starter Starts-->
+            <div id="content-starter-con">
+                <div id="csc-cover" class="st-cover">
+                    <img src="assets/img/logo/logo-light.svg" id="hp-starter-logo"/>
+                    <h1 id="mkebsi-name" class="glitch-title">MKebsi's Website,</h1>
+                    <h2 id="mkebsi-name-subtitle" class="hover">Where the Professionalsim Takes Another Step!</h2>
+                </div>
+                <div id="hp-s-bottom"></div>
+            </div>
+            <!--Page Starter Ends-->
+            
+            <!--Page Body Starts-->
+            <h2 id="what-find" data-aos="fade-right">What Can You Find Here?</h2>
+            <br/><br/>
+            <div class="two-columns">
+                <a href="#">
+                <img src="assets/img/homepage/web-dev.png" alt="Websites Development" class="what-find-img" data-aos="fade-up"/>
+                <h3 class="wf-title" data-aos="zoom-in-down">Your Personal Websites Developer</h3>
+                </a>
+                <a href="#">
+                <img src="assets/img/homepage/articles.png" alt="Technology Articles" class="what-find-img" data-aos="fade-up"/>
+                <h3 class="wf-title" data-aos="zoom-in-down">Interesting Tech Articles</h3>
+                </a>
+            </div>
+            
+            <br/>
+            
+            <div id="hp-why-made">
+                <h2 id="hp-wm-title" data-aos="fade-right">Why This Website Was Made?</h2>
+                <p class="small-parg" data-aos="fade-right">
+                    Initially, I started making this website for fun,
+                    but later on, I discovered that I really need to
+                    make use of it. So, I thought about making it
+                    as a personal website, CV, work portfolio, and
+                    a blogging platform for myself since I really love writing.
+                    I wrote a deep description about <a href="about.html#reason">
+                    Why I Build This Site here.</a> Feel free to check
+                    it out.
+                </p>
+            </div>
+            
+            <br/>
+            
+            <h2 id="hp-hm-title" data-aos="fade-right">How To Get the Most out of This Website?</h2>
+            <div id="how-most" class="three-columns">
+                <div id="hp-grow" class="hp-card" data-aos="zoom-in-up">
+                    <a href="#">
+                    <img src="assets/img/homepage/money.png" alt="Raise Your Incomes"/>
+                    <h3>You Want To Grow Your Business Online</h3>
+                    <p>
+                        You can grow online easly with smooth, 
+                        high-quality website. This is what I am here
+                        to do for your business whether it's a small 
+                        startup or a huge corporation. 
+                    </p>
+                    </a>
+                </div>
+                
+                <div id="hp-read" class="hp-card" data-aos="zoom-in-up" data-aos-offset="170">
+                    <a href="#">
+                    <img src="assets/img/homepage/prog-enthu.png" alt="Programming"/>
+                    <h3>You Are a Programming Enthusiast</h3>
+                    <p>
+                        If you love programming as I do, you can
+                        read some interesting articles, ask and discuss 
+                        about programming topics or collaborate together
+                        as one team.
+                    </p>
+                    </a>
+                </div>
+                
+                <div id="hp-down" class="hp-card" data-aos="zoom-in-up" data-aos-offset="220">
+                    <a href="#">
+                    <img src="assets/img/homepage/build.png" alt="Teamwork and Collaboration"/>
+                    <h3>You Want To Know How This Was Built</h3>
+                    <p>
+                        If you want to use this website as yours or understand 
+                        how somethings were implemented, you can 
+                        download it from the links at the bottom.
+                    </p>
+                    </a>
+                </div>
+            </div>
+            <!--Page Body Ends-->
+            
+            <!--Page Conclusion-->
+            <p id="decision-quote" class="quote" data-aos="fade-up">Life is trying things to see if they work!</p>
+        </main>
+        <!--Main Content Ends-->
+        
+        <!--Calling Footer-->
+        <img src="assets/img/footer-transition.png" id="footer-transition"/>
+        <iframe id="footer" src="footer.html"></iframe>
+        
+        <!--Javascript Libraries & Files-->
+        <script src="assets/js/lib/aos.js"></script>
+        <script src="assets/js/lib/anime.min.js"></script>
+        <script src="assets/js/lib/particles.js"></script>
+        <script src="assets/js/lib/typed.min.js"></script>
+        <script src="assets/js/lib/glitch.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
