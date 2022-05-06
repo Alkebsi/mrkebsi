@@ -1,0 +1,29 @@
+/*
+
+********************************************************
+
+Note: 
+》~ Project: MKebsi - My Personal Website 
+》~ Version: v1.0.0
+》~ Online Demo: https://mrkebsi.github.io/
+
+********************************************************
+
+*/
+
+
+@font-face
+{
+	src: url("fonts/Comfortaa-Bold.ttf");
+	font-family: bold;
+}
+@font-face
+{
+	src: url("fonts/Comfortaa-Light.ttf");
+	font-family: light;
+}
+@font-face
+{
+	src: url("fonts/Comfortaa-Regular.ttf");
+	font-family: regular;
+}

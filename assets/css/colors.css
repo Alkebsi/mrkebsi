@@ -1,0 +1,42 @@
+/*
+
+********************************************************
+ 
+》~ Project: MKebsi - My Personal Website 
+》~ Version: v1.0.0
+》~ Online Demo: https://mrkebsi.github.io/
+
+********************************************************
+
+*/
+
+/*Colors*/
+:root
+{
+    --dark: #040815;
+    --light-grad: linear-gradient(135deg, #57ffe0, #008068);
+    --dark-grad: linear-gradient(135deg, #1031a9, #ffffff);
+    --red-grad: linear-gradient(135deg, #ff6b1c, #ff0000);
+    --aqua: #00ffff;
+    --dark-aqua: #006666;
+    --orange: #ff6b1c;
+    --purple: #ff00ff;
+    --red: #ff0000;
+    --blue: #00ffff;
+    --dark-blue: #0d173a;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #bdbdbd;
+    --transparent: rgba(0, 0, 0, 0);
+    --shadow: 0 0 10px -5px #000000;
+    --shadow-inset: 0 0 10px -5px #000000 inset;
+    --light-shadow: 0 0 20px -5px #ffffff;
+    --light-shadow-inset: 0 0 20px -5px #ffffff inset;
+    --red-glow: 0 0 20px -5px #ff0000;
+    --blue-glow: 0 0 20px -5px #00ffff;
+    --red-glitch-glow: 0 0 10px #ff0000;
+    --red-glitch-glow-inset: 0 0 10px #ff0000 inset;
+    --blue-glitch-glow: 0 0 10px #00ffff;
+    --blue-glitch-glow-inset: 0 0 10px #00ffff inset;
+    
+}

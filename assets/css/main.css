@@ -1,0 +1,914 @@
+/*
+
+********************************************************
+
+Note: 
+》~ Project: MKebsi - My Personal Website 
+》~ Version: v1.0.0
+》~ Online Demo: https://mrkebsi.github.io/
+
+********************************************************
+
+
+》~ Table of Content
+1) Importing the Colors File
+2) Importing the Fonts Manager
+3) Setring the Animations
+4) Adding some General Styling Elements
+5) Setting Every Page Header 
+6) Setting Customized Contents for Every Page
+    - Generals 
+    - index.html - Homepage
+    - cv.html - Resume
+    - about.html
+    - articles.html - The Blog
+    - 404 - Once Entering an Unknown Directory
+7) Setring the Footer & Its Transition
+8) Managing the Responsiveness of the Site
+9) The Tablet View
+10) The Mobile View
+*/
+
+
+/*---------------------------------------------
+Colors
+---------------------------------------------*/
+@import url("colors.css");
+
+/*---------------------------------------------
+Fonts
+---------------------------------------------*/
+@import url("fontsMgr.css");
+
+/*---------------------------------------------
+Animations
+---------------------------------------------*/
+@keyframes glitch {
+    0% {opacity:1;}
+    50% {opacity:0.5;}
+    100% {opacity:1;}
+}
+
+@keyframes glitchAfter {
+    0% {opacity:0.3;transform:translateX(10px) scaleX(2)}
+    50% {opacity:0;transform:translateX(0) scaleX(2)}
+    100% {opacity:0.3;transform:translateX(-10px) scaleX(2)}
+}
+
+/*---------------------------------------------
+General Settings
+---------------------------------------------*/
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: regular;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    color: var(--white);
+    z-index: 1;
+}
+html, body {
+    background: var(--dark);
+}
+h1, h2, h3, h4, h5, h6, .title {
+    font-family: bold;
+    line-height: 1.5em;
+    padding: 5px 0;
+    filter: url(#svg-glitch-stuck);
+}
+.grad {
+    background: var(--dark-grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+::selection {
+    background: var(--white);
+    color: var(--aqua);
+}
+a {
+    text-decoration: none;
+    color: var(--aqua);
+    transition: all 0.4s;
+}
+a:hover {
+    color: var(--white);
+}
+a:active {
+    color: var(--dark-aqua);
+}
+b {
+    font-family: bold;
+}
+.pc-element {
+    display: initial;
+}
+.mobile-element {
+    display: none;
+}
+ul {
+    list-style-position: inside;
+    list-style-type: none;
+}
+li {
+    margin: 10px 0;
+}
+li::before {
+    content: "";
+    display: inline-block;
+    margin: 3px 10px;
+    width: 10px;
+    height: 10px;
+    background: var(--light-grad);
+    border-radius: 50%;
+    box-shadow: var(--blue-glitch-glow);
+}
+/* The scrolling bar styling */
+::-webkit-scrollbar {
+    transition: all 1s;
+    width: 2px;
+    height: 2px;
+}
+::-webkit-scrollbar-track {    
+    background: var(--black); 
+}
+::-webkit-scrollbar-thumb {    
+    background: linear-gradient(145deg, var(--orange), var(--aqua));
+    border-radius: 20px; 
+    transition: all 1s;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gray);
+}
+
+/*glitches*/
+.glitch-title {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    filter: url(#svg-glitch1);
+}
+
+.el-sp.is-changing {
+    animation: glitch 0.1s infinite;
+}
+
+.el-sp {
+    transition: all 0.1s;
+    text-shadow: var(--red-glitch-glow);
+    position: relative;
+    will-change: transform, opacity;
+}
+
+.el-sp:after {
+    content: attr(data-txt);
+    color: var(--white);
+    position: absolute; 
+    top: 0;
+    left: 0;
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.el-sp.is-changing:after {
+    animation: glitchAfter 0.4s infinite alternate;
+}
+
+/*---------------------------------------------
+Header
+---------------------------------------------*/
+#loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: block;
+    background: var(--dark);
+    transition: opacity 1s;
+    z-index: 99;
+}
+#loading * {
+    color: var(--white); 
+}
+#logo-con {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 30%;
+    filter: url(#svg-glitch1);
+}
+.cls-2 {
+    transform-origin: 70% 40%;
+    fill: var(--white);
+    filter: url(#svg-glitch1);
+}
+#motivationals {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    text-align: center;
+    color: var(--white);
+    filter: url(#svg-glitch2);
+    text-shadow: var(--blue-glitch-glow);
+}
+#quote-owner {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0.7;
+    color: var(--white);
+}
+#nav-bar {
+    z-index: 99;
+}
+#pc-nav {
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 90;
+}
+.nav-btn-cons {
+    width: 100%;
+    border-radius: 0 50px 50px 0;
+    margin: 20px 0;
+    filter: url(#svg-glitch1);
+}
+.nav-btns {
+    position: relative;
+    left: -95%;
+    width: 100%;
+    border-radius: 0 50px 50px 0;
+    background: none;
+    border-top: 1px solid var(--white);
+    border-right: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    border-left: 0px solid transparent;
+    padding: 5px 20px;
+    font-family: bold;
+    transition: all 0.4s;
+}
+.nav-btns:hover {
+    left: 0;
+    border-top: 5px solid var(--white);
+    border-right: 5px solid var(--white);
+    border-bottom: 5px solid var(--white);
+    font-weight: 900;
+}
+#dots-con {
+    position: fixed;
+    top: 2.5px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    transition: all 1s;
+    z-index: 90;
+}
+.dots {
+    position: relative;
+    top: 0;
+    width: 9px;
+    height: 9px;
+    background: var(--white);
+    margin: 4px 0;
+    border-radius: 200px;
+    transition: margin 0.3s, top 0.3s, width 0.3s, background-color 0.3s;
+    filter: url("#svg-glitch1");
+}
+#rpanel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%);
+    background: var(--white);
+    transition: all 0.4s;
+    z-index: 89;
+    padding-top: 40px;
+}
+.mb-nav-btn-cons {
+    width: 50%;
+    border-radius: 0 50px 50px 0;
+    margin: 10px 0;
+    filter: url(#svg-glitch1);
+}
+.mb-nav-btns {
+    position: relative;
+    width: 100%;
+    border-radius: 0 50px 50px 0;
+    background: none;
+    border-top: 1px solid var(--dark);
+    border-right: 1px solid var(--dark);
+    border-bottom: 1px solid var(--dark);
+    color: var(--dark);
+    border-left: 0px solid transparent;
+    padding: 5px;
+    font-family: bold;
+    transition: all 0.4s;
+}
+.mb-nav-btns:hover {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+#mnbc1 {
+    width: 85%;
+}
+#mnbc2 {
+    width: 76%;
+}
+#mnbc3 {
+    width: 67%;
+}
+#mnbc4 {
+    width: 58%;
+}
+#mnbc5 {
+    width: 49%;
+}
+#mnbc6 {
+    width: 40%;
+}
+/*---------------------------------------------
+Content
+---------------------------------------------*/
+.indexed-content {
+    position: relative;
+    z-index: 2;
+}
+.two-columns {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px; 
+}
+.three-columns {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding: 20px; 
+}
+#particles {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    filter: drop-shadow(0 0 5px var(--aqua));
+}
+.quote {
+    padding: 0 180px;
+    margin: 100px 0;
+    font-family: bold;
+    font-size: 2em;
+    line-height: 40px;
+    filter: url(#svg-glitch1);
+    text-shadow: var(--blue-glitch-glow);
+}
+.quote:before {
+    content: "Great people said, \"";
+}
+.quote:after {
+    content: "\"";
+}
+.hover > span:hover{
+    filter: url(#svg-glitch1) invert(100%);
+}
+.hover > span *:hover {
+    filter: none;
+}
+
+/*Index.html*/
+#content-starter-con {
+    mix-blend-mode: screen;
+    z-index: 0;
+}
+.st-cover {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+#content-starter-con #csc-cover {
+    background-image: url("../img/homepage/hair.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#hp-starter-logo {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 50%;
+    max-height: 50vh;
+    filter: url(#svg-glitch1);
+}
+#mkebsi-name {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+#mkebsi-name-subtitle {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    filter: url(#svg-glitch2);
+    text-shadow: var(--red-glitch-glow);
+    width: 50%;
+}
+#hp-s-bottom {
+    transform: translate(0, -100%);
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, #000000);
+}
+#what-find {
+    text-align: center;
+}
+.what-find-img {
+    width: 100%;
+    padding: 50px;
+    filter: url(#svg-glitch2);
+}
+.wf-title {
+    padding: 2px 50px;
+    text-align: center; 
+}
+#hp-wm-title {
+    padding: 100px 100px 0;
+}
+.small-parg {
+    padding: 10px 100px;
+}
+#hp-hm-title {
+    padding: 100px 50px 50px;
+    text-align: center;
+}
+.hp-card {
+    margin: 20px;
+    padding: 20px;
+    filter: url(#svg-glitch2);
+    border-radius: 20px;
+    box-shadow: var(--blue-glow);
+}
+.hp-card img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*cv.html*/
+#cv-cover {
+    background-image: url("../img/cv/japan.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#cv-contact, #cv-about {
+    padding: 20px 100px;
+}
+#ed-skill-con {
+    padding: 0 80px;
+}
+#ed-skill-con > div {
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+#education {
+    grid-row: 1 / 4;
+}
+#awards {
+    grid-row: 3 / 6;
+}
+.es-title {
+    filter: url(#svg-glitch1);
+    text-shadow: var(--red-glitch-glow);
+}
+.ed-center, .ed-type {
+    font-family: bold;
+    font-weight: bold;
+    font-size: 1.3em;
+    filter: url(#svg-glitch2);
+}
+.ed-type {
+    font-size: 1em;
+}
+.ed-period {
+    font-family: light;
+    filter: url(#svg-glitch1);
+    opacity: 0.7;
+}
+.ed-dec li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    filter: url(#svg-glitch-stuck);
+}
+.ed-dec li:before {
+    content: "";
+    background: var(--red-grad);
+    box-shadow: var(--red-glitch-glow);
+    transition: all 1s;
+}
+.ed-dec li:hover {
+    white-space: normal;
+    overflow: visible;
+    filter: none;
+    font-family: bold;
+    font-weight: bold;
+}
+.skills-ring {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 2px;
+    font-family: light;
+    font-size: 1em;
+    filter: url(#svg-glitch1);
+    box-shadow: var(--red-glitch-glow);
+    float: left;
+}
+.skills-ring > .gauge > .dial {
+    stroke: var(--transparent);
+    stroke-width: 17;
+}
+.skills-ring .gauge > .value {
+    stroke: url(#red-grad);
+    stroke-dasharray: none;
+    stroke-width: 16;
+    stroke-linecap: round;
+}
+.skill {
+    font-family: bold;
+    font-weight: bold;
+    margin-left: 70px;
+}
+#s-skills span {
+    white-space: nowrap;
+    display: inline-block;
+    padding: 3px 10px;
+    margin: 10px 2px;
+    border-radius: 50px;
+    font-family: bold;
+    color: var(--white);
+    background: var(--red-grad);
+    box-shadow: var(--red-glitch-glow);
+    filter: url(#svg-glitch-stuck);
+}
+#ed-skill-con a {
+    color: var(--white);
+    text-shadow: var(--red-glitch-glow);
+    display: block;
+}
+#ed-skill-con a:hover {
+    text-shadow: var(--blue-glitch-glow);
+}
+#social-contacts {
+    text-align: center;
+}
+.cv-icon {
+    width: 48px;
+    margin: 20px 4px 0;
+    fill: url(#red-grad);
+    filter: url(#svg-glitch1);
+}
+#contacts-starter {
+    width: 100%;
+    margin: 0 0 30px;
+    padding: 80px 20vw;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    box-shadow: var(--blue-glitch-glow);
+    backdrop-filter: blur(5px);
+    filter: url(#svg-glitch1);
+}
+#why-contact {
+    padding: 20px 100px;
+}
+.glassy-element {
+    backdrop-filter: blur(5px);
+    padding: 50px 20px;
+    margin: 50px 0;
+    box-shadow: var(--light-shadow);
+}
+#email-form {
+    padding: 50px;
+}
+.input-label {
+    font-family: bold;
+    font-weight: bold; 
+    display: block;
+    padding: 10px;
+    color: var(--blue);
+    font-size: 1.6em;
+}
+.text-input {
+    border: none; 
+    background: none;
+    border-radius: 200px;
+    filter: url(#svg-glitch1);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    text-align: center;
+    color: var(--blue);
+    box-shadow: var(--blue-glitch-glow-inset);
+}
+#form-name, #form-email,
+#form-email-label, #form-name-label,
+#m-form-email-label {
+    width: 45%;
+    margin: 5px 2.5%;
+    float: left;
+    text-align: center;
+}
+#m-form-email-label {
+    display: none;
+}
+#form-email {
+    margin-bottom: 50px;
+}
+#form-message-label {
+    margin: 20px 0 5px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+#form-message {
+    width: 100%;
+    min-height: 200px;
+    padding: 20px 50px;
+    overflow: hidden;
+    float: left;
+}
+#submit {
+    width: 50%;
+    display: block;
+    margin: 0 auto 50px;
+    padding: 10px;
+    font-size: 1.5em;
+    font-family: bold;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 0 50px 50px;
+    background: none;
+    color: var(--blue);
+    box-shadow: var(--blue-glitch-glow);
+    backdrop-filter: blur(2px);
+    filter: url(#svg-glitch2);
+    transition: all 0.4s;
+}
+#submit:hover {
+    border-radius: 0 0 10px 10px;
+    background: var(--blue);
+    color: var(--dark);
+}
+#partings-title {
+    padding: 20px 100px 0;
+}
+#partings {
+    padding: 0 100px 20px;
+}
+
+/*about.html*/
+#fpi-title {
+    position: absolute;
+    width: 40%;
+    transform: translate(50px, 60px);
+    filter: url(#svg-glitch1);
+    text-shadow: var(--blue-glitch-glow);
+}
+#full-page-img {
+    width: 100%;
+    filter: url(#svg-glitch2);
+}
+#about-logo {
+    width: 70%;
+    display: block;
+    margin: 50px auto;
+    filter: url(#svg-glitch1);
+}
+#mmap {
+    width: 100%;
+    border-radius: 50px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: var(--blue-glitch-glow-inset);
+    backdrop-filter: blur(2px);
+    transition: all 0.4s;
+}
+#mmap:hover {
+    padding: 0;
+    border-radius: 10px;
+}
+
+/*articles.html*/
+#arts-cover {
+    background-image: url("../img/articles/books.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/*404*/
+#four-oh-four-con {
+    width: 100vw;
+    height: 100vh;
+}
+#four-oh-four {
+    position: absolute; 
+    width: 80%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: url(#svg-glitch1);
+}
+#four-oh-four img {
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+}
+
+/*---------------------------------------------
+Footer
+---------------------------------------------*/
+#footer-transition {
+    position: relative;
+    top: 23px;
+    width: 100%;
+    margin: 100px 0 0;
+    filter: url(#svg-glitch1) url(#svg-glitch2) url(#svg-glitch-stuck);
+    z-index: 0;
+}
+#footer {
+    position: relative;
+    bottom: -10px;
+    width: 100%;
+    height: 90vh;
+    background: var(--white);
+    border: none;
+    z-index: 2;
+}
+#footer-content {
+    text-align: center;
+    padding: 20px;
+}
+#footer-logo {
+    width: 70%;
+}
+#footer-links {
+    text-align: left;
+}
+#footer-links > div {
+    margin: 50px 0;
+    padding: 20px;
+}
+#footer-links * { 
+    display: block; 
+}
+#footer-links capture {
+    font-family: bold;
+    font-size: 1.3em;
+}
+#footer-links a {
+    color: var(--dark);
+    font-family: light;
+}
+#footer-links a:hover {
+    color: var(--dark-aqua);
+}
+#footer-links a:active {
+    color: var(--aqua);
+}
+
+/*---------------------------------------------
+Responsiveness Manager
+---------------------------------------------*/
+/*Tablets View*/
+@media only screen and (max-width: 1280px) {
+    .pc-element {
+        display: none;
+    }
+    .mobile-element, .tablet-element {
+        display: initial;
+    }
+}
+
+/*Mobile View*/
+@media only screen and (max-width: 900px) {
+    .pc-element, .tablet-element {
+        display: none;
+    }
+    .mobile-element {
+        display: initial;
+    }
+    .two-columns {
+        display: block;
+    }
+    .three-columns {
+        display: block;
+    }
+    .st-cover {
+        height: initial;
+        min-height: 100vh;
+        padding-bottom: 100px;
+    }
+    #hp-starter-logo {
+        position: relative;
+        display: block;
+        top: 20px;
+        transform: translate(0, 0);
+        width: 80%;
+        margin: 0 auto 30px;
+    }
+    #mkebsi-name {
+        top: 0;
+        transform: translate(0, 0);
+        font-size: 1.6em;
+        text-align: center; 
+    }
+    #mkebsi-name-subtitle {
+        top: 0;
+        transform: translate(0, 0);
+        width: 100%;
+        text-align: center;
+        font-size: 1.4em;
+    }
+    .what-find-img {
+        padding: 10px 5px;
+    }
+    .wf-title {
+        margin-bottom: 50px;
+    }
+    .small-parg, #cv-contact, #cv-about,
+    #ed-skill-con, #why-contact, #partings,
+    #partings-title {
+        padding: 20px;
+    }
+    #hp-wm-title {
+        padding: 50px 20px 0;
+        text-align: center;
+    }
+    .hp-card {
+        margin: 50px 20px;
+    }
+    .quote {
+        padding: 50px 20px;
+        font-size: 2em;
+    }
+    #ed-skill-con > div {
+        text-align: center;
+    }
+    .ed-center {
+        font-size: 1.1em;
+    }
+    .ed-type {
+        font-size: 0.9em;
+    }
+    .ed-dec li {
+        font-size: 0.9em;
+        filter: none;
+        text-shadow: var(--red-glitch-glow);
+    }
+    .ed-dec li:before {
+        content: "";
+        filter: url(#svg-glitch-stuck);
+    }
+    .ed-period {
+        font-size: 0.7em;
+    }
+    #s-skills span {
+        font-size: 0.9em;
+        padding: 0 10px;
+    }
+    #m-form-email-label {
+        display: initial;
+    }
+    #form-email-label {
+        display: none;
+    }
+    #form-name, #form-name-label, 
+    #form-email, #form-email-label,
+    #m-form-email-label {
+        width: 100%;
+        margin: 5px 0;
+    }
+    #form-message {
+        padding: 20px;
+        border-radius: 50px;
+    }
+    #fpi-title {
+        position: relative;
+        width: 100%;
+        transform: none;
+        padding: 60px 20px;
+        font-size: 1.7em;
+        text-align: center;
+        backdrop-filter: blur(5px);
+        border-radius: 0 0 20px 20px;
+        box-shadow: var(--blue-glitch-glow-inset);
+    }
+    #mmap {
+        padding: 5px;
+        border-radius: 20px;
+    }
+    #four-oh-four img {
+        width: 100%;
+    }
+}
