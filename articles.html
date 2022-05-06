@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <!--Head Tag-->
+    <head>
+        <!--Page Title-->
+        <title>Articles</title>
+        
+        <!--META Tages-->
+        <!--Site Description-->
+        <meta name="description" content="
+        M.Kebsi's articles page will give a point of where
+        can you find some of MKebsi's Blog articles or
+        publications. This is just a simple site with some
+        general information. Enter to read more.
+        " />
+        <!--Site Keywords-->
+        <meta name="keywords" content="
+        ***The Keywords***
+        "/>
+        <!--Site Settings-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#040815"/>
+        
+        <!--LINK Tages-->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <link rel="stylesheet" href="assets/css/lib/aos.css"/>
+        <link rel="icon" href="assets/img/logo/logo-minimal-dark.svg" />
+        
+        <!--Additional Styling Specifications-->
+        <style>
+            .el-sp {
+                text-shadow: var(--blue-glitch-glow);
+                color: var(--white);
+            }
+            .el-sp:after {
+                content: none;
+            }
+            #articles-title {
+                position: absolute; 
+                width: 80%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-shadow: var(--blue-glitch-glow);
+            }
+        </style>
+    </head>
+    
+    <!--Site/Content Body-->
+    <body onload="Start()">
+        <!--Calling the SVG Filters-->
+        <div id="svg-filters-signer"></div>
+        
+        <!--Loading Starts-->
+        <div id="loading">
+            <svg xmlns="http://www.w3.org/2000/svg" id="logo-con" width="500px" viewBox="0 0 70 70">
+                <g id="Layer_1" data-name="Layer 1" >
+                    <g transform="translate(18.2, 5)"><path class="cls-2" d="M22.59,19.08V29.3A11.77,20.77,0,0,1,10.81,30V30.3A11.78,20.78,0,0,1,22.59,29.08Z"/></g>
+                    <g transform="translate(-18.2, 5)"><path class="cls-2" d="M59.2,7.3V7.3A11.78,11.78,0,0,1,47.41,49.8V49.8A11.79,11.79,0,0,1,59.2,7.3Z"/></g>
+                    <path class="cls-2" d="M40.89,16.42v20.4a5.89,5.89,0,0,1-11.78,0V35.42a5.89,5.89,0,1,1,11.78,0Z"/>
+                </g>
+            </svg>
+            <p id="motivationals"></p>
+            <p id="quote-owner"></p>
+        </div>
+        <!--Loading Ends-->
+        
+        <!--Particles Manager-->
+        <div id="particles"></div>
+        
+        <!--Navigation System Stars-->
+        <nav id="nav-bar">
+            <!--Desktop View Nav. Bar. Starts-->
+            <div id="pc-nav" class="pc-element">
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/index.html';">Home</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/portfolio.html';">Portfolio</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/cv.html';">Resume</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/about.html';">About</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/articles.html';">Articles</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/contact.html';">Contact Me</button>
+                </div>
+            </div>
+            <!--Desktop View Nav. Bar. Ends-->
+            
+            <!--Mobile View Nav. Bar. Starts-->
+            <div id="mobile-nav" class="mobile-element">
+                <!-- Animated Dots Starts -->
+                <div id="dots-con" onmouseover="RP(1)" onmouseout="RP(0)">
+                    <div class="dots" id="dot1"></div>
+                    <div class="dots" id="dot2"></div>
+                    <div class="dots" id="dot3"></div>
+                </div>
+                <!--Animated Dots Ends-->
+                
+                <!--Right Panel Starts-->
+                <div id="rpanel" class="mobile-element" onmouseover="RP(1)" onmouseout="RP(0)">
+                    <div class="mb-nav-btn-cons" id="mnbc1">
+                        <button class="mb-nav-btns" onclick="window.location = '/index.html';">Home</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc2">
+                        <button class="mb-nav-btns" onclick="window.location = '/portfolio.html';">Portfolio</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc3">
+                        <button class="mb-nav-btns" onclick="window.location = '/cv.html';">Resume</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc4">
+                        <button class="mb-nav-btns" onclick="window.location = '/about.html';">About</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc5">
+                        <button class="mb-nav-btns" onclick="window.location = '/articles.html';">Articles</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc6">
+                        <button class="mb-nav-btns" onclick="window.location = '/contact.html';">Contact Me</button>
+                    </div>
+                </div>
+                <!--Right Panel Ends-->
+            </div>
+            <!--Mobile View Nav. Bar. Ends-->
+        </nav>
+        <!--Navigation System Ends-->
+        
+        <!--Main Content Starts-->
+        <main id="content">
+            
+            <!--Page Starter Starts-->
+            <div id="content-starter-con">
+                <div id="arts-cover" class="st-cover">
+                    <h1 id="articles-title" class="glitch-title">MKebsi's Blog, Where the Passion Goes Forward Forever!</h1>
+                </div>
+                <div id="hp-s-bottom"></div>
+            </div>
+            <!--Page Starter Ends-->
+            
+            <!--Page Body Starts-->
+            <div class="small-parg">
+                <h2 data-aos="fade-right">Things I Love To Write About</h2>
+                <p data-aos="fade-right">
+                    Since I was a small child, I was feeling that
+                    something works inside my heart once I see
+                    the small, children comic books. Most of the
+                    children in my age were only love to look at the images
+                    and that is it, but I was always struggling to
+                    understand the words and the main theme of
+                    what I am looking at. This stimulated my 
+                    hobby and passion in reading. After elementary school,
+                    I started my first Arabic blog. And now, I feel
+                    that English blogs are the way I may express
+                    my passion to the world. Anyhow, I usually
+                    write about...
+                </p>
+                <br/>
+                <ul>
+                    <li data-aos="fade-right">Coding or Programming,</li>
+                    <li data-aos="fade-right">Marketing,</li>
+                    <li data-aos="fade-right">English Language,</li>
+                    <li data-aos="fade-right">Personal Stories, or</li>
+                    <li data-aos="fade-right">Other Interesting Topics, e.g. Music, Photography, Design...etc</li>
+                </ul>
+                <br/><br/><br/>
+                <h2 data-aos="fade-right">Why Am I Writing?</h2>
+                <p data-aos="fade-right">
+                    I believe that the main reason has been mentioned
+                    above, but I still have some others. First, I want a way
+                    to practice typing on my computer when I don't have
+                    a project to work on. Then I believe that doing something 
+                    is better than nothing, so I love getting anything out
+                    of my heart since this will keep teaching me new things.
+                    Lastly, I usually feel that I must pay back to the community 
+                    whether financially or knowledgeably. So, I started
+                    teaching English locally and write globally. This really
+                    treats the soul, the heart and the brain once you understand that
+                    what you are doing is helping someone somewhere, isn't it?
+                </p>
+                <br/><br/><br/>
+                <h2 data-aos="fade-right">Where Are Those Articles?</h2>
+                <p data-aos="fade-right">
+                    Take a look at the bottom. You will see some links
+                    to the latest articles I have written. Moreover, try to
+                    search about "MKebsi" and I hope that you would
+                    see some. All of this happens since this is not
+                    a dynamic website, which means I can't list every
+                    single article I wrote inside the webpage. I only
+                    found a way to make some at the bottom, and
+                    that seemed good enough for now, but after a
+                    little while, I will try to transfer and make a dynamic
+                    one soon...
+                </p>
+            </div>
+            <!--Page Body Ends-->
+            
+            <!--Page Conclusion-->
+            <p id="reading-quote" class="quote" data-aos="fade-up">Life is trying things to see if they work!</p>
+        </main>
+        <!--Main Content Ends-->
+        
+        <!--Calling Footer-->
+        <img src="assets/img/footer-transition.png" id="footer-transition"/>
+        <iframe id="footer" src="footer.html"></iframe>
+        
+        <!--Javascript Libraries & Files-->
+        <script src="assets/js/lib/aos.js"></script>
+        <script src="assets/js/lib/anime.min.js"></script>
+        <script src="assets/js/lib/particles.js"></script>
+        <script src="assets/js/lib/typed.min.js"></script>
+        <script src="assets/js/lib/glitch.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

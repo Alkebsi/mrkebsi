@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <!--Head Tag-->
+    <head>
+        <!--Page Title-->
+        <title>About</title>
+        
+        <!--META Tages-->
+        <!--Site Description-->
+        <meta name="description" content="
+        
+        " />
+        <!--Site Keywords-->
+        <meta name="keywords" content="
+        ***The Keywords***
+        "/>
+        <!--Site Settings-->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#040815"/>
+        
+        <!--LINK Tages-->
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <link rel="stylesheet" href="assets/css/lib/aos.css"/>
+        <link rel="icon" href="assets/img/logo/logo-minimal-dark.svg" />
+    </head>
+    
+    <!--Site/Content Body-->
+    <body onload="Start()">
+        <!--Calling the SVG Filters-->
+        <div id="svg-filters-signer"></div>
+        
+        <!--Loading Starts-->
+        <div id="loading">
+            <svg xmlns="http://www.w3.org/2000/svg" id="logo-con" width="500px" viewBox="0 0 70 70">
+                <g id="Layer_1" data-name="Layer 1" >
+                    <g transform="translate(18.2, 5)"><path class="cls-2" d="M22.59,19.08V29.3A11.77,20.77,0,0,1,10.81,30V30.3A11.78,20.78,0,0,1,22.59,29.08Z"/></g>
+                    <g transform="translate(-18.2, 5)"><path class="cls-2" d="M59.2,7.3V7.3A11.78,11.78,0,0,1,47.41,49.8V49.8A11.79,11.79,0,0,1,59.2,7.3Z"/></g>
+                    <path class="cls-2" d="M40.89,16.42v20.4a5.89,5.89,0,0,1-11.78,0V35.42a5.89,5.89,0,1,1,11.78,0Z"/>
+                </g>
+            </svg>
+            <p id="motivationals"></p>
+            <p id="quote-owner"></p>
+        </div>
+        <!--Loading Ends-->
+        
+        <!--Particles Manager-->
+        <div id="particles"></div>
+        
+        <!--Navigation System Stars-->
+        <nav id="nav-bar">
+            <!--Desktop View Nav. Bar. Starts-->
+            <div id="pc-nav" class="pc-element">
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/index.html';">Home</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/portfolio.html';">Portfolio</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/cv.html';">Resume</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/about.html';">About</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/articles.html';">Articles</button>
+                </div>
+                <div class="nav-btn-cons">
+                    <button class="nav-btns" onclick="window.location = '/contact.html';">Contact Me</button>
+                </div>
+            </div>
+            <!--Desktop View Nav. Bar. Ends-->
+            
+            <!--Mobile View Nav. Bar. Starts-->
+            <div id="mobile-nav" class="mobile-element">
+                <!-- Animated Dots Starts -->
+                <div id="dots-con" onmouseover="RP(1)" onmouseout="RP(0)">
+                    <div class="dots" id="dot1"></div>
+                    <div class="dots" id="dot2"></div>
+                    <div class="dots" id="dot3"></div>
+                </div>
+                <!--Animated Dots Ends-->
+                
+                <!--Right Panel Starts-->
+                <div id="rpanel" class="mobile-element" onmouseover="RP(1)" onmouseout="RP(0)">
+                    <div class="mb-nav-btn-cons" id="mnbc1">
+                        <button class="mb-nav-btns" onclick="window.location = '/index.html';">Home</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc2">
+                        <button class="mb-nav-btns" onclick="window.location = '/portfolio.html';">Portfolio</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc3">
+                        <button class="mb-nav-btns" onclick="window.location = '/cv.html';">Resume</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc4">
+                        <button class="mb-nav-btns" onclick="window.location = '/about.html';">About</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc5">
+                        <button class="mb-nav-btns" onclick="window.location = '/articles.html';">Articles</button>
+                    </div>
+                    <div class="mb-nav-btn-cons" id="mnbc6">
+                        <button class="mb-nav-btns" onclick="window.location = '/contact.html';">Contact Me</button>
+                    </div>
+                </div>
+                <!--Right Panel Ends-->
+            </div>
+            <!--Mobile View Nav. Bar. Ends-->
+        </nav>
+        <!--Navigation System Ends-->
+        
+        <!--Main Content Starts-->
+        <main id="content" class="indexed-content">
+            
+            <!--Page Starter Starts-->
+            <div id="full-page-img-con">
+                <h1 id="fpi-title" class="hover">Who Is MKebsi, What Does It Means and Why He Built This Site?</h1>
+                <img id="full-page-img" class="pc-element tablet-element"src="assets/img/about/starter.png"/>
+            </div>
+            <!--Page Starter Ends-->
+            
+            <!--Page Body Starts-->
+            <br/><br/>
+            <div class="small-parg">
+                <h2 data-aos="fade-right">What Does "MKebsi" Means?</h2 data-aos="fade-right">
+                <p data-aos="fade-right">
+                    <b>MKebsi</b> is an abbreviated version of my
+                    full name, Mohammed Alkebsi, but instead of
+                    writing MAlkebsi, I wrote it like MKebsi since in
+                    Arabic, the word "AL" have the same usage of
+                    the definite article "The". As a family name, Arabic
+                    people used to make their family names definite
+                    to have a great respect among the others. After
+                    all, I deleted the "The" and wrote it everywhere and
+                    used it as a trademark or logo.
+                </p>
+                <br/><br/><br/>
+                <h2 data-aos="fade-right">Who Am I?</h2 data-aos="fade-right">
+                <p data-aos="fade-right">
+                    I am working as a full stack websites developer and a 
+                    digital marketer. I am also studying computer science 
+                    at Harvard, but it is just a course. Expeditiousness was
+                    the main thing I thought of while working on any single 
+                    thing.
+                </p>
+                <br/>
+                <p data-aos="fade-right">
+                    Working at Freelancer, UpWork, Envato Elements and 
+                    Hook Studio was a real success road that polished my 
+                    passion and turn it into a professional career.
+                </p>
+                <br/>
+                <p data-aos="fade-right">
+                    My main goal is to be a professional computer science
+                    specialist working with websites, video games, android
+                    apps and windows/mac softwares. I think that seems 
+                    too much, but once I dream, I make it limitless so that it
+                    can be achieved. 
+                </p>
+                <br/>
+                <p data-aos="fade-right">
+                    The biggest attainment I have done was being a certified
+                    individual from Google, Aalto University, Helsinki University, 
+                    The Open University, SEMRush Academy, Hasso Plattner 
+                    Institute (HPI), Template Monster, HackerRank and 
+                    freeCodeCamp.org. After all this, I am also willing to register 
+                    for a Bachelor degree from University of London, and I want 
+                    to have some Micro Bachelors from Edx and its partners. I am 
+                    also currently attending (or let's say watching) CS50's 
+                    introduction to computer science and CS50 Web Development 
+                    classes taught by Prof.David J. Malan and assisted by Brain Yu 
+                    at Harvard University. 
+                </p>
+                <br/><br/><br/>
+                <h2 data-aos="fade-right">What About the Logo?</h2 data-aos="fade-right">
+                <img src="assets/img/logo/logo-name-light.svg" id="about-logo" alt="MKebsi's Logo" data-aos="fade"/>
+                <p data-aos="fade-right">
+                    This logo was a special gift from the amazing
+                    team at <a href="https://linkedin.com/company/hookstu/">
+                    Hook Studio</a>. I seemed simple, modern and greatly
+                    relative to what any websites designer or developer 
+                    would love. After all, I think it represents me as 
+                    well as Hook Studio, too.
+                </p>
+                <br/><br/><br/>
+                <h2 id="reason" data-aos="fade-right">What Was The Main Reason of Creating This Website?</h2 data-aos="fade-right">
+                <p data-aos="fade-right">
+                    The story started long ago, in 2018. I was about to start
+                    the high school. It was the summer vacation, and that 
+                    deep question came to my mind. "What am I going to 
+                    study at college?". It was a real hard question, but I have 
+                    seen that I am already in love with the technology, so I 
+                    started search about the best tech jobs in the world. 
+                </p>
+                <br/>
+                <p data-aos="fade-right">
+                    One of them was making video games, and I loved it. I 
+                    started learning it, but it was extremely difficult for me 
+                    since I didn't know English at all and the Arabic resources 
+                    were too limited. 
+                </p>
+                <br/>
+                <p data-aos="fade-right">
+                    In 2019's summer vacation, after one year, I started 
+                    explaining my enthusiasm in tech to one of my friends 
+                    who was studying it at college, and I told him that games 
+                    programming was hard. He gave me some Arabic pdfs
+                    on programming essentials and websites development.
+                    I really loved how a person can do something like a 
+                    website with only code. 
+                </p>
+                <br/>
+                <p data-aos="fade-right">
+                    Once I started, my mom decided that me and my brother
+                    should start learning English. This was weird but also the 
+                    best decisions my mom have ever made form me. Three 
+                    months, and I was able to write and read in English, so I
+                    started searching in English. 
+                </p>
+                <br/>
+                <p data-aos="fade-right">
+                    Then I joined some college students who have 
+                    encouraged their professor to teach them some special 
+                    courses in programming. We used W3Schools as the 
+                    main reference for that. It was one of the most pleasant
+                    moments in my life because the challenges were so 
+                    exciting, and we were all full of amazing momentum. 
+                </p>
+                <br/>
+                <p data-aos="fade-right">
+                    After all, this was the final project at that course, but their 
+                    were no particles in it, no glitches and no illustrations. I 
+                    only made a very simple, water effect. Lastly, I updated it 
+                    to make it as my personal website and published it to the 
+                    public. 
+                </p>
+                <br/><br/><br/>
+                <h2 data-aos="fade-right">How Dose the Process of Rebuilding the Site Goes?</h2 data-aos="fade-right">
+                <p data-aos="fade-right">
+                    Most of the time, I start with a plan and try to keep going
+                    with the actual plan. First of all, I usually make a small
+                    brainstorming for the resources available, 
+                    interdependencies, rabbit holes (the things that may trap
+                    me), technologies, effects, styles and the main features
+                </p>
+                <br/>
+                <a href="assets/MKebsi's mindmap for mrkebsi.github.io website - Web Design Planning System.pdf">
+                    <img src="assets/img/about/mindmap.png" id="mmap" alt="MKebsi's Website Working Mindmap" data-aos="fade"/>
+                </a>
+                <br/>
+                <p data-aos="fade-right">
+                    After that, I also start with a simple rough draft, and
+                    then try to git the style and make a final prototype. 
+                    This is how I start and end making a web project, but
+                    this one have skipped these to processes since it was
+                    initially made long ago.
+                </p>
+                <br/>
+                <p data-aos="fade-right">
+                    Then, after having a clear view of what am I going to do,
+                    I head to work in the client-side (e.i. designing, what a 
+                    user can see). After having done with the client-side, I
+                    start programming and data managing. This would, as
+                    I hope, be the best process i could start and end with.
+                </p>
+                <br/><br/><br/>
+                <h2 data-aos="fade-right">In Conclusion</h2 data-aos="fade-right">
+                <p data-aos="fade-right">
+                    All this was just a friendly talk. I did all this and wrote too
+                    much because I don't want someone to enter my "About
+                    Page" and doesn't find what he was looking for. I felt as I
+                    am filling a FAQs page and not anything more, but I hope
+                    that it tells you who am I, and why I made this. If there is 
+                    something  you want to know about, fell free to <a href="contap>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>ct.html">
+                    contact me</a> any time.
+                </p>
+            </div>
+            <!--Page Body Ends-->
+            
+            <!--Page Conclusion-->
+            
+        </main>
+        <!--Main Content Ends-->
+        
+        <!--Calling Footer-->
+        <img src="assets/img/footer-transition.png" id="footer-transition"/>
+        <iframe id="footer" src="footer.html"></iframe>
+        
+        <!--Javascript Libraries & Files-->
+        <script src="assets/js/lib/aos.js"></script>
+        <script src="assets/js/lib/anime.min.js"></script>
+        <script src="assets/js/lib/particles.js"></script>
+        <script src="assets/js/lib/typed.min.js"></script>
+        <script src="assets/js/lib/glitch.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
