@@ -1,0 +1,125 @@
+/*
+
+********************************************************
+
+Note: 
+》~ Project: MKebsi - My Personal Website 
+》~ Version: v1.0.0
+》~ Online Demo: https://mrkebsi.github.io/
+
+    > Now, you are in the css version for the blog pages for
+    MKebsi's Website. This is a part from a free, licensed 
+    under tye Apache License template uploaded at
+    https://github.com/mrkebsi/MrKebsi.github.io
+
+********************************************************
+
+*/
+img {
+    width: 100%;
+}
+.note {
+    margin: 60px 40px;
+    padding: 20px 40px;
+    border-left: 4px solid var(--gray);
+    font-style: italic;
+    opacity: 0.8;
+}
+.note:before {
+    content: "Note: ";
+}
+.article-author {
+    padding: 100px;
+}
+.author-img {
+    width: 90px;
+    max-height: 90px;
+    transform: translate(0, -30%);
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px; 
+    padding: 10px;
+}
+.author-name {
+    font-family: bold;
+}
+#articles-time {
+    padding: 20px 100px;
+    font-style: italic;
+    opacity: 0.7;
+}
+#article-title {
+    text-align: center;
+    padding: 50px 100px;
+}
+#toc {
+    margin: 40px; 
+    padding: 40px;
+    box-shadow: var(--blue-glitch-glow);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+#toc header {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 10px auto 30px;
+}
+#main-content {
+    padding: 30px 150px;
+}
+#main-content p {
+    margin: 10px 0;
+}
+#main-content h2, #main-content h3 {
+    margin: 50px 0 0;
+}
+#main-content img {
+    margin: 20px 0 0;
+    border-radius: 5px;
+}
+#main-content .img-source {
+    display: block;
+    margin: 0 0 50px;
+    padding: 5px 0;
+    text-align: center;
+    font-style: italic;
+    color: var(--white);
+    border-bottom: 1px solid var(--aqua);
+    border-radius: 20px;
+}
+#main-content .img-source:before {
+    content: "Source: ";
+}
+.about-author {
+    margin: 50px 180px;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    box-shadow: var(--blue-glitch-glow-inset);
+    text-align: center;
+}
+.about-author img {
+    width: 40%;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 10px 0 20px;
+    box-shadow: var(--blue-glitch-glow-inset);
+}
+/*mobile view*/
+@media only screen and (max-width: 900px) {
+    .article-author {
+        padding: 100px 20px 20px;
+    }
+    #article-title, #articles-time,
+    #main-content{
+        padding: 20px;
+    }
+    .about-author {
+        margin: 20px;
+    }
+    #toc {
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 20px;
+    }
+}
