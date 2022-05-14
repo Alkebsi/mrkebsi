@@ -1,5 +1,5 @@
 # MKebsi's Website
-![](https://github.com/MrKebsi/MrKebsi.github.io/blob/main/cover1.jpg) 
+![](https://github.com/MrKebsi/MrKebsi.github.io/blob/main/assets/img/cover1.jpg) 
 This project was mainly as a personal portfolio for myself, but now it is open for every excited designer. You can freely use this project for any purpose. The limitations are:
 - You can't take it as it is and sell,
 - You can't use the logos as yours
@@ -29,4 +29,4 @@ Also I want, even not forced, to mention some great resources I used. They were 
 - **JS Libraries:** I used many of them mentioned inside [Assets > js > libs > License > *](somelink)
 -  **Special Thanks:** I want to give a special thank to the guys at codepen.io all, and a thank from my hurt to [Blaz Kemperle](https://codepen.io/blazicke), [Smashing Magazine](https://codepen.io/smashingmag) and [Dirk Weber](https://codepen.io/DirkWeber) since their pens really helped me. Thanks guys...
 
-![](https://github.com/MrKebsi/MrKebsi.github.io/blob/main/cover2.jpg) 
+![](https://github.com/MrKebsi/MrKebsi.github.io/blob/main/assets/img/cover2.jpg) 
