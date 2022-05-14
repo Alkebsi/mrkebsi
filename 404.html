@@ -6,10 +6,10 @@
         <title>404 - Content Is Not Found!</title>
         
         <!--META Tages-->
-        <!--There is no description or keywords since I dont want it to show up in the SERP-->
-        <!--Site Settings-->
+        <meta name="robots" content="noindex,nofollow"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#040815"/>
+        <!--There is no description or keywords since I dont want it to show up in the SERP-->
         
         <!--LINK Tages-->
         <link rel="stylesheet" href="/assets/css/main.css"/>
@@ -65,7 +65,7 @@
             <!--Desktop View Nav. Bar. Ends-->
             
             <!--Mobile View Nav. Bar. Starts-->
-            <div id="mobile-nav" class="mobile-element">
+            <div id="mobile-nav" class="mobile-element tablet-element">
                 <!-- Animated Dots Starts -->
                 <div id="dots-con" onmouseover="RP(1)" onmouseout="RP(0)">
                     <div class="dots" id="dot1"></div>
@@ -75,7 +75,7 @@
                 <!--Animated Dots Ends-->
                 
                 <!--Right Panel Starts-->
-                <div id="rpanel" class="mobile-element" onmouseover="RP(1)" onmouseout="RP(0)">
+                <div id="rpanel" class="mobile-element tablet-element" onmouseover="RP(1)" onmouseout="RP(0)">
                     <div class="mb-nav-btn-cons" id="mnbc1">
                         <button class="mb-nav-btns" onclick="window.location = '/index.html';">Home</button>
                     </div>

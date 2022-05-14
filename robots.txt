@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /404.html
+Disallow: /footer.html
+Disallow: /assets/js/*
+Disallow: /assets/css/*
+Disallow: /articles/assets/*
+
+Sitemap: https://mrkebsi.github.io/sitemap.xml
+Sitemap: https://mrkebsi.github.io/articles/sitemap.xml
+Sitemap: https://mrkebsi.github.io/articles/images-sitemap.xml

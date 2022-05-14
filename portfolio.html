@@ -3,25 +3,86 @@
     <!--Head Tag-->
     <head>
         <!--Page Title-->
-        <title>Work Portfolio</title>
+        <title>Portfolio</title>
         
         <!--META Tages-->
         <!--Site Description-->
         <meta name="description" content="
-        
+            MKebsi's Portfolio is the place where you can find 
+            whatever MKebsi have done from professional
+            projects to small coding challenges.
         " />
         <!--Site Keywords-->
         <meta name="keywords" content="
-        ***The Keywords***
+            mkebsi, mr kebsi, alkebsi, kebsi, m.kebsi,
+            mkebsi, mohammed alkebsi, website developer,
+            remote worker, freelancer, full time, part time,
+            web designer, mkebsi's work portfolio, projects
+            showcase, mkebsi at behance, why mkebsi don't
+            have a behance account, mkebsi at dribbble,
+             محمد الكبسي, كبسي, معرض الاعمال الخصه بمحمد الكبسي, معرض اعمال محمد
+            مبرمج مواقع محترف, مصمم مواقع عربي, يمني, اليمن,
+            مستقل, مطور برمجيات عن بعد, المشاريع الخاصة بمحمد الكبسي, مشاريع الكبسي
         "/>
         <!--Site Settings-->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#040815"/>
+        <meta name="robots" content="index, follow"/>
+        
+        <!--Site Open Graph-->
+        <meta property="og:type" content="profile"/>
+        <meta property="og:profile:first_name" content="Mohammed"/>
+        <meta property="og:profile:last_name" content="Alkebsi"/>
+        <meta property="og:profile:username" content="MKebsi"/>
+        <meta property="og:profile:gender" content="male"/>
+        <meta property="og:site_name" content="MKebsi"/>
+        <meta property="og:title" content="About MKebsi - Your Personal Websites Developer"/>
+        <meta property="og:url" content="https://mrkebsi.github.io/portfolio.html"/>
+        <meta property="og:image" content="https://mrkebsi.github.io/assets/img/portfolio/others.jpg"/>
+        <meta property="og:image:alt" content="Who is MKebsi and What Can He Do for You?"/>
+        <meta property="og:image:width" content="1500"/>
+        <meta property="og:image:height" content="1687"/>
+        <meta property="og:description" content="
+            MKebsi's Portfolio is the place where you can find 
+            whatever MKebsi have done from professional
+            projects to small coding challenges.
+        "/>
+        
+        <!--Site Twitter Cards-->
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:title" content="About Page - Your Personal Websites Developer"/>
+        <meta name="twitter:url" content="https://mrkebsi.github.io/portfolio.html"/>
+        <meta name="twitter:image" content="https://mrkebsi.github.io/assets/img/portfolio/others.jpg"/>
+        <meta name="twitter:site" content="MKebsi"/>
+        <meta name="twitter:creator" content="@MrKebsi"/>
+        <meta name="twitter:description" content="
+            MKebsi's Portfolio is the place where you can find 
+            whatever MKebsi have done from professional
+            projects to small coding challenges.
+        "/>
         
         <!--LINK Tages-->
+        <link rel="canonical" href="http://mrkebsi.github.io/portfolio.html"/>
         <link rel="stylesheet" href="assets/css/main.css"/>
         <link rel="stylesheet" href="assets/css/lib/aos.css"/>
         <link rel="icon" href="assets/img/logo/logo-minimal-dark.svg" />
+        
+        <!--Additional Styling Specifications-->
+        <style>
+            .el-sp {
+                text-shadow: var(--blue-glitch-glow);
+                color: var(--white);
+            }
+            #portfolio-title {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(0, -50%);
+                text-shadow: var(--blue-glitch-glow);
+                width: 100%;
+                text-align: center;
+            }
+        </style>
     </head>
     
     <!--Site/Content Body-->
@@ -72,7 +133,7 @@
             <!--Desktop View Nav. Bar. Ends-->
             
             <!--Mobile View Nav. Bar. Starts-->
-            <div id="mobile-nav" class="mobile-element">
+            <div id="mobile-nav" class="mobile-element tablet-element">
                 <!-- Animated Dots Starts -->
                 <div id="dots-con" onmouseover="RP(1)" onmouseout="RP(0)">
                     <div class="dots" id="dot1"></div>
@@ -82,7 +143,7 @@
                 <!--Animated Dots Ends-->
                 
                 <!--Right Panel Starts-->
-                <div id="rpanel" class="mobile-element" onmouseover="RP(1)" onmouseout="RP(0)">
+                <div id="rpanel" class="mobile-element tablet-element" onmouseover="RP(1)" onmouseout="RP(0)">
                     <div class="mb-nav-btn-cons" id="mnbc1">
                         <button class="mb-nav-btns" onclick="window.location = '/index.html';">Home</button>
                     </div>
@@ -109,12 +170,268 @@
         <!--Navigation System Ends-->
         
         <!--Main Content Starts-->
-        <main id="content" class="indexed-content">
-            <div id="four-oh-four-con">
-                <div id="four-oh-four">
-                    <h2 class="hover">No Work Have Been Published Yet!</h2>
-                    <a href="index.html">Back To Home</a> or <a href="contact.html">Let Your Website Be The First One Made By Me</a>
+        <main id="content">
+            
+            <!--Page Starter Starts-->
+            <div id="content-starter-con">
+                <div id="portfolio-cover" class="st-cover">
+                    <h1 id="portfolio-title" class="glitch-title">Work Portfolio</h1>
                 </div>
+                <div id="hp-s-bottom"></div>
+            </div>
+            <!--Page Starter Ends-->
+            
+            <!--Page Body Starts-->
+            <div class="small-parg">
+                <h2>Who Am I?</h2>
+                <p>
+                    My name is Mohammed Alkebsi or MKebsi. I am
+                    a professional full-stack websites developer and
+                    a digital marketing specialist able to work remotey 
+                    and internationally.<a href="about.html"> You can
+                    read more about me here.</a> Of course,I don't have 
+                    that much work experience, but I have built some  
+                    projects in my learning path and the coursework. You 
+                    can explore some of them below. In case you want to 
+                    see <a href="cv.html">my resume click here</a>, or
+                    if you want to <a href="contact.html">contact me,
+                    then click here</a>. After all, I will be glad that there
+                    are some people who see what I am doing.
+                </p>
+            </div>
+            <br/><br/>
+            <div class="two-columns projects-con">
+                <div class="projects-img left-pi pc-element tablet-element">
+                    <img src="assets/img/portfolio/zanora.jpg" alt="Zanora - a Portfolio Template"/>
+                </div>
+                <div class="projects-img left-pi mobile-element">
+                    <img src="assets/img/portfolio/zanora.jpg" alt="Zanora - a Portfolio Template"/>
+                </div>
+                <div class="projects-description">
+                    <h2>Zanora - HTML Portfolio Template</h2>
+                    <p>
+                        This template is one of the projects that was
+                        built to be published or sold in Envato Themeforest.
+                        I worked hard on it, and because of some internet 
+                        issues, I was unable to upload it. The Internet stopped
+                        me for a while, but I later decided to make it free and
+                        open source project. I saw many things that can be
+                        edited and updated, so I will work on it soon, and I
+                        will try to make it free, God willing.
+                    </p>
+                    <br/>
+                    <h3>Techniques Used in This Project</h3>
+                    <ul>
+                        <li>HTML, CSS and Javascript</li>
+                        <li>On Scroll Animations</li>
+                        <li>Particles</li>
+                        <li>Full-Page Images</li>
+                        <li>Hairy Elements</li>
+                        <li>Dark/Light Themes</li>
+                        <li>One CSS File Coloring</li>
+                    </ul>
+                    <br/>
+                    <p>
+                        Finally, this was a project that I can call a Professional 
+                        one since it was meant to be published in Envato 
+                        Themeforest. Also it is not released till now since I had
+                        to build other projects. It Is coming Soon...
+                    </p>
+                </div>
+            </div>
+            <div class="two-columns projects-con">
+                <div class="projects-img right-pi mobile-element">
+                    <img src="assets/img/portfolio/henkel.jpg" alt="Henkel - HTML Landing Page"/>
+                </div>
+                <div class="projects-description">
+                    <h2>Henkel - HTML Landing Page</h2>
+                    <p>
+                        Once upon a time, I felt that only building projects
+                        that are purposeless is going to cost me a lot of
+                        time for a small thing in my portfolio, so making
+                        something for some company may made an impact.
+                        I went to LinkedIn Company Directory and clicked
+                        on of the links. It was Henkel. I didn't actually know
+                        what Henkel is, but I decided to build something with
+                        that name.
+                    </p>
+                    <br/>
+                    <p>
+                        I made a small challenge to motivate me that I would
+                        build the website from the information gathered from
+                        outside the main website since I wanted to compare 
+                        my final result with Henkel's actual site. I went on and
+                        took my info from LinkedIn, Facebook and Wikipedia. 
+                        Lastly, I end up with a, as I can express it, a masterpiece.
+                        It is not that legendary, but better that Henkel's Landing
+                        Page. That was the challenge.
+                    </p>
+                    <br/>
+                    <h3>Techniques Used in This Project</h3>
+                    <ul>
+                        <li>HTML, CSS and Javascript</li>
+                        <li>Strange, Changeable Scroll Effects</li>
+                        <li>Full-Page Navigation Bar</li>
+                        <li>Full-Page Images</li>
+                        <li>Hairy Elements</li>
+                    </ul>
+                    <br/>
+                    <p>
+                        In advance, I flexed so much on this project while it may
+                        seem usual for some people, but I have seen some surprised
+                        faces before. Anyhow, the point is that I think I would be able
+                        to make some changes and then upload it online. Up till now,
+                        this website you are viewing is the first thing I have 
+                        professionally uploaded online, so any other thing is secondary.
+                    </p>
+                </div>
+                <div class="projects-img right-pi pc-element tablet-element">
+                    <img src="assets/img/portfolio/henkel.jpg" alt="Henkel - HTML Landing Page"/>
+                </div>
+            </div>
+            <div class="two-columns projects-con">
+                <div class="projects-img left-pi pc-element tablet-element">
+                    <img src="assets/img/portfolio/headbanging.jpg" alt="HeadBanging - A Strange Web Page"/>
+                </div>
+                <div class="projects-img left-pi mobile-element">
+                    <img src="assets/img/portfolio/headbanging.jpg" alt="HeadBanging - A Strange Web Page"/>
+                </div>
+                <div class="projects-description">
+                    <h2>HeadBanging - A Strange Web Page</h2>
+                    <p>
+                        Day after day, studying only was a boring process, and
+                        I believed that using what I have learned so far would
+                        make something even I didn't know what is it for! I was
+                        only a student, but I wanted to do something to impress
+                        my friends, and the idea of HeadBanging come to me. A
+                        simple website with some head banging heavy metal music
+                        in the background. 
+                    </p>
+                    <br/>
+                    <p>
+                        I wanted to make the music rase high and have some
+                        special effects once a strong beat hits or when the 
+                        pattern of the song changes. At the time I was just a
+                        beginner, this idea was a real challenge and fascinating,
+                        too. However, I wasn't able to have all the effects done 
+                        especially working with Web Audio API.
+                    </p>
+                    <br/>
+                    <p>
+                        After a week of completing everything with no audio
+                        effects, I decided to have an advice from my teacher,
+                        and that was a mistake. He said that what I have already
+                        done super amazing, fantastic...bla bla, and he showed
+                        it to my friends (who were actually college students) 
+                        flexing with it since I was the only high school student 
+                        at the class. After all, he ignored my request and ruined
+                        everything! Yet, I made it, but also I haven't upload it. I may
+                        have another additional ideas in the coming days
+                    </p>
+                    <br/>
+                    <h3>Techniques Used in This Project</h3>
+                    <ul>
+                        <li>HTML, CSS, Javascript and Web Audio API</li>
+                        <li>Strange Scrolling Effects</li>
+                        <li>Particles</li>
+                        <li>Full-Page Images</li>
+                        <li>Fades</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="two-columns projects-con">
+                <div class="projects-img right-pi mobile-element">
+                    <img src="assets/img/portfolio/sizillion.jpg" alt="SiZillion - A Platform for Web Responsiveness Testing"/>
+                </div>
+                <div class="projects-description">
+                    <h2>SiZillion - A Platform for Web Responsiveness Testing</h2>
+                    <p>
+                        In 2019, I was very enthusiastic about being a Websites
+                        Developer/Designer, but one of the biggest challenges 
+                        in my life started there. I didn't had a laptop at that time.
+                        I managed, after great difficulties, to code using my mobile
+                        phone. At a time, I remembered that I had a small document
+                        that was able to test the width and height of my other 
+                        documents. 
+                    </p>
+                    <br/>
+                    <p>
+                        I searched for it and developed it, actually still developing
+                        it, to something more sophisticated and neatly designed.
+                        This thing made me keep using my phone in some web
+                        apps even after a long professional career. After all, a 
+                        mobile is much more flexible than PC, but for some touches
+                        and nothing more.
+                    </p>
+                    <br/>
+                    <p>
+                        Being able to test my new document in different devices
+                        made even better for me to understand how will my site
+                        look like in 32 inches monitor while I have a 12 inches laptop!
+                        Having more than 1 functionality, I was able to exploit
+                        things that I have never thought of.
+                    </p>
+                    <br/>
+                    <h3>Techniques Used in This Project</h3>
+                    <ul>
+                        <li>HTML, CSS and Javascript</li>
+                        <li>Gradients</li>
+                        <li>Dark Theme</li>
+                    </ul>
+                    <br/>
+                    <p>
+                        I also think of making it open source and help others
+                        how had my problem in the old days. I don't know what
+                        can I say more, but at least, this is another thing I want to
+                        help the community with. Even it's just a simple testing
+                        tool, it may help someone somewhere! 
+                    </p>
+                </div>
+                <div class="projects-img right-pi pc-element tablet-element">
+                    <img src="assets/img/portfolio/sizillion.jpg" alt="SiZillion - A Platform for Web Responsiveness Testing"/>
+                </div>
+            </div>
+            <div class="two-columns projects-con">
+                <div class="projects-img left-pi pc-element tablet-element">
+                    <img src="assets/img/portfolio/others.jpg" alt="Others - Codepen.io"/>
+                </div>
+                <div class="projects-img left-pi mobile-element">
+                    <img src="assets/img/portfolio/others.jpg" alt="Others - Codepen.io"/>
+                </div>
+                <div class="projects-description">
+                    <h2>Other Simple Projects - Codepen.io Pens</h2>
+                    <p>
+                        As programmers life goes, challenges come and we
+                        usually compete on new technologies, ideas, trends,
+                        codes and styles. Other times, courses require some 
+                        kind of coursework that comes simple, but holds weight 
+                        for a special tech. All of those things are published
+                        to <a href="https://codepen.io/mkebsi">Codepen.io</a>.
+                        At <a href="https://github.com/mrkebsi">Github</a>,
+                        I only upload the things that are "professional or numerous"
+                        as I can call it.
+                    </p>
+                    <br/>
+                    <h3>Techniques Used in This Project</h3>
+                    <ul>
+                        <li>Everything I have learned so far can be seen here</li>
+                    </ul>
+                </div>
+            </div>
+            <!--Page Body Ends-->
+            
+            <!--Page Conclusion-->
+            <div class="small-parg">
+                <h2>To Conclude</h2>
+                <p>
+                    At the end, I want to say sorry that I wasn't able to show
+                    you live demos of my work, but I will try to do so soon.
+                    You can <a href="contact.html">reach me</a> at any time.
+                    I always love to see others give me feedbacks about my work
+                    even it was a negative review. At least, contacting me is going
+                    to make a change. Thanks you for reaching this point. I really
+                    appreciate your time and attention.
+                </p>
             </div>
         </main>
         <!--Main Content Ends-->
@@ -130,8 +447,5 @@
         <script src="assets/js/lib/typed.min.js"></script>
         <script src="assets/js/lib/glitch.js"></script>
         <script src="assets/js/main.js"></script>
-        <script>
-            decQuote.innerHTML = Quotes("decision");
-        </script>
     </body>
 </html>
