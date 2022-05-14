@@ -139,8 +139,36 @@ let glitch = [
     "</defs>",
     "</svg>"
 ];
+let mobileGlitch = [
+    "<svg class='roboglitchfilter' id='svg-filters' width='100vw' height='100vh' style='position: absolute; visibility: hidden; pointer-events: none;' version='1.1' xmlns='http://www.w3.org/2000/svg'>",
+    "<defs>",
+    "<filter id='svg-glitch1' width='100vw' height='100vw' x='-20%' y='-20%' color-interpolation-filters='sRGB' preserveAspectRatio='none'>",
+    "<feBlend in='SHADOW_RED' in2='SHADOW_AQUA' result='BLEND_SHADOW'/>",
+    "</filter>",
+    "<filter id='svg-glitch2'>",
+    "<feBlend in='SHADOW_RED' in2='SHADOW_AQUA' result='BLEND_SHADOW'/>",
+    "</filter>",
+    "<filter id='svg-glitch-stuck' width='100vw' height='100vw' x='-20%' y='-20%' color-interpolation-filters='sRGB' preserveAspectRatio='none'>",
+    "<feBlend in='SHADOW_RED' in2='SHADOW_AQUA' result='BLEND_SHADOW'/>",
+    "</filter>",
+    "<linearGradient id='red-grad' x1='0%' y1='0%' x2='100%' y2='100%'>",
+    "<stop offset='0%'",
+    "style='stop-color:#ff6b1c;stop-opacity:1' />",
+    "<stop offset='100%'",
+    "style='stop-color:#ff0000;stop-opacity:1' />",
+    "</linearGradient>",
+    "<filter id='svg-glow' x='0' y='0' width='200%' height='200%'>",
+    "<feOffset result='offOut' in='SourceGraphic' dx='20' dy='20' />",
+    "<feGaussianBlur result='blurOut' in='offOut' stdDeviation='10' />",
+    "<feBlend in='SourceGraphic' in2='blurOut' mode='normal' />",
+    "</filter>",
+    "</defs>",
+    "</svg>"
+];
+
 let filterSigner =
 document.getElementById("svg-filters-signer");
+CeaseGlitches();
 filterSigner.innerHTML = glitch.join(""); // I call this here since I want it to ignite before the loading bar vanishes
 
 // Calling the quotes
@@ -149,6 +177,13 @@ document.getElementById("decision-quote");
 let readQuote =
 document.getElementById("reading-quote");
 
+// Set the footer height
+let footer =
+document.getElementById("footer");
+function FooterResize(){
+footer.height = footer.contentWindow.document.getElementsByTagName("body")[0].scrollHeight + 20;
+requestAnimationFrame(FooterResize);
+}
 
 
 // Main Functions
@@ -166,6 +201,22 @@ function Start()
     else if(readQuote)
         {
             readQuote.innerHTML = Quotes("reading");
+        }
+    else
+        {
+            // Do Nothing
+        }
+        
+    // Calling the function that will resize the footer
+    FooterResize();
+}
+
+// Ceasing the animated glitches if the user owns a mobile
+function CeaseGlitches()
+{
+    if(window.innerWidth <= 900)
+        {
+            glitch = mobileGlitch;
         }
     else
         {
@@ -202,7 +253,7 @@ function RP(x)
         }
 }
 
-//Quotes Randomizer
+// Quotes Randomizer
 function Quotes(s)
 {
     //the final return
@@ -310,7 +361,7 @@ particlesJS('particles',
 );
 //*/
 
-//The loading animation manager
+// The loading animation manager
 let logoAnime = document.getElementsByClassName("cls-2");
 let logoAnimCon = document.getElementById("logo-con");
 anime({
@@ -374,7 +425,7 @@ anime({
     easing: 'easeInOutExpo'
 });
 
-//Animating the typing effect for the loading section of the website
+// Animating the typing effect for the loading section of the website
 let quotes = new Typed('#motivationals', {
     strings: [
         '<i>"Our patience will achieve more than our force."</i>',
