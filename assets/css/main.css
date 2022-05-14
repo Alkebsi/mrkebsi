@@ -18,11 +18,12 @@ Note:
 5) Setting Every Page Header 
 6) Setting Customized Contents for Every Page
     - Generals 
-    - index.html - Homepage
+    - index.html - Home Page
     - cv.html - Resume
-    - about.html
-    - articles.html - The Blog
-    - 404 - Once Entering an Unknown Directory
+    - about.html - The Info Page
+    - articles.html - The Blogs Page
+    - portfolio.html - The Work Showcase Page
+    - 404 - Unknown Page (Once Entering an Undetected Directory)
 7) Setring the Footer & Its Transition
 8) Managing the Responsiveness of the Site
 9) The Tablet View
@@ -31,17 +32,17 @@ Note:
 
 
 /*---------------------------------------------
-Colors
+    Colors
 ---------------------------------------------*/
 @import url("colors.css");
 
 /*---------------------------------------------
-Fonts
+    Fonts
 ---------------------------------------------*/
 @import url("fontsMgr.css");
 
 /*---------------------------------------------
-Animations
+    Animations
 ---------------------------------------------*/
 @keyframes glitch {
     0% {opacity:1;}
@@ -55,8 +56,20 @@ Animations
     100% {opacity:0.3;transform:translateX(-10px) scaleX(2)}
 }
 
+@keyframes leftArrow {
+    50% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 95% 90%, 100% 95%, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes rightArrow {
+    50% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%, 5% 15%, 0% 10%);
+    }
+}
+
 /*---------------------------------------------
-General Settings
+    General Settings
 ---------------------------------------------*/
 * {
     box-sizing: border-box;
@@ -76,11 +89,6 @@ h1, h2, h3, h4, h5, h6, .title {
     line-height: 1.5em;
     padding: 5px 0;
     filter: url(#svg-glitch-stuck);
-}
-.grad {
-    background: var(--dark-grad);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
 }
 ::selection {
     background: var(--white);
@@ -176,7 +184,7 @@ li::before {
 }
 
 /*---------------------------------------------
-Header
+    Header
 ---------------------------------------------*/
 #loading {
     width: 100%;
@@ -246,7 +254,7 @@ Header
     border-top: 1px solid var(--white);
     border-right: 1px solid var(--white);
     border-bottom: 1px solid var(--white);
-    border-left: 0px solid transparent;
+    border-left: 0px solid var(--transparent);
     padding: 5px 20px;
     font-family: bold;
     transition: all 0.4s;
@@ -305,7 +313,7 @@ Header
     border-right: 1px solid var(--dark);
     border-bottom: 1px solid var(--dark);
     color: var(--dark);
-    border-left: 0px solid transparent;
+    border-left: 0px solid var(--transparent);
     padding: 5px;
     font-family: bold;
     transition: all 0.4s;
@@ -333,7 +341,7 @@ Header
     width: 40%;
 }
 /*---------------------------------------------
-Content
+    Content
 ---------------------------------------------*/
 .indexed-content {
     position: relative;
@@ -418,7 +426,7 @@ Content
     transform: translate(0, -100%);
     width: 100%;
     height: 100px;
-    background: linear-gradient(to bottom, transparent, #000000);
+    background: linear-gradient(to bottom, var(--transparent), var(--black));
 }
 #what-find {
     text-align: center;
@@ -436,7 +444,9 @@ Content
     padding: 100px 100px 0;
 }
 .small-parg {
+    position: relative;
     padding: 10px 100px;
+    z-index: 2;
 }
 #hp-hm-title {
     padding: 100px 50px 50px;
@@ -697,12 +707,43 @@ Content
     padding: 0;
     border-radius: 10px;
 }
-
 /*articles.html*/
 #arts-cover {
     background-image: url("../img/articles/books.jpg");
     background-position: center;
     background-size: cover;
+}
+
+/*portfolio.html*/
+#portfolio-cover {
+    background-image: url("../img/portfolio/aurora.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.projects-con {
+    padding: 20px 0;
+    margin: 50px 0;
+}
+.projects-img img {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+.left-pi img {
+    border-radius: 0 20px 20px 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 10%, 95% 15%, 100% 20%, 100% 100%, 0% 100%);
+    animation: leftArrow 5s infinite;
+}
+.right-pi img {
+    border-radius: 20px 0 0 20px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 90%, 5% 85%, 0% 80%);
+    animation: rightArrow 5s infinite;
+}
+.projects-description {
+    padding: 100px;
 }
 
 /*404*/
@@ -726,7 +767,7 @@ Content
 }
 
 /*---------------------------------------------
-Footer
+    Footer
 ---------------------------------------------*/
 #footer-transition {
     position: relative;
@@ -740,10 +781,10 @@ Footer
     position: relative;
     bottom: -10px;
     width: 100%;
-    height: 90vh;
     background: var(--white);
-    border: none;
     z-index: 2;
+    border: none;
+    overflow: hidden;
 }
 #footer-content {
     text-align: center;
@@ -776,16 +817,19 @@ Footer
 #footer-links a:active {
     color: var(--aqua);
 }
+#footer-article-links a {
+    padding: 10px auto;
+}
 
 /*---------------------------------------------
-Responsiveness Manager
+    Responsiveness Manager
 ---------------------------------------------*/
 /*Tablets View*/
 @media only screen and (max-width: 1280px) {
-    .pc-element {
+    .mobile-element, .pc-element {
         display: none;
     }
-    .mobile-element, .tablet-element {
+    .tablet-element {
         display: initial;
     }
 }
@@ -910,5 +954,31 @@ Responsiveness Manager
     }
     #four-oh-four img {
         width: 100%;
+    }
+    #footer-line-one {
+        border-bottom: 0.5px solid var(--dark);
+        border-left: 100px solid var(--transparent);
+        border-right: 100px solid var(--transparent);
+        height: 0;
+        width: 100%;
+    }
+    #footer-line-two {
+        border-top: 0.5px solid var(--dark);
+        border-left: 100px solid var(--transparent);
+        border-right: 100px solid var(--transparent);
+        height: 0;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .projects-img img {
+        height: 50vh;
+    }
+    .left-pi img, .right-pi img {
+        border-radius: 20px;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 55% 100%, 50% 90%, 45% 100%, 0% 100%);
+        animation: none;
+    }
+    .projects-description {
+        padding: 30px;
     }
 }
